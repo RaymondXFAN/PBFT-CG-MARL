@@ -1,0 +1,4 @@
+env: vmas_formation
+scenario: formation
+n_agents: 4
+max_steps: 100

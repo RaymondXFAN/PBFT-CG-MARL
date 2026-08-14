@@ -1,0 +1,41 @@
+{
+  "n_episodes": 3,
+  "episode_rewards": [
+    1.394226806354709,
+    -1.0447462326847017,
+    -0.838660315843299
+  ],
+  "episode_lengths": [
+    100,
+    100,
+    100
+  ],
+  "mean_reward": -0.1630599140577639,
+  "std_reward": 1.104377441052912,
+  "max_reward": 1.394226806354709,
+  "min_reward": -1.0447462326847017,
+  "mean_length": 100.0,
+  "consensus_rate": 0.1,
+  "avg_consensus_rounds": 1.9,
+  "message_overhead": {
+    "total_messages": 4560.0,
+    "avg_messages_per_step": 15.2,
+    "messages_per_step_theoretical": 8.0
+  },
+  "consensus_stats": {
+    "total_calls": 300,
+    "successful_consensus": 30,
+    "consensus_success_rate": 0.1,
+    "n_byzantine": 0,
+    "byzantine_type": "random",
+    "current_leader": 0
+  },
+  "byzantine_tolerance": {
+    "byzantine_n": 1,
+    "byzantine_type": "random",
+    "clean_mean_reward": -0.3988540252709451,
+    "byzantine_mean_reward": -0.2894871156507482,
+    "byzantine_tolerance": 0.7257971521137263,
+    "performance_drop_rate": 0.2742028478862737
+  }
+}

@@ -1,0 +1,6 @@
+env: lbf_2s3f
+scenario: 2s-3f-2co
+n_agents: 2
+n_food: 3
+max_steps: 100
+grid_size: 10

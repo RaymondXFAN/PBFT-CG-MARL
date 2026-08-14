@@ -1,0 +1,21 @@
+# PBFT-CG-MAPPO 算法配置 - 用于冻土监测环境
+algo: pbft_cg_mappo
+lr: 0.0003
+clip_ratio: 0.2
+value_loss_coef: 0.5
+entropy_coef: 0.02
+gamma: 0.95
+gae_lambda: 0.95
+ppo_epoch: 5
+num_mini_batch: 2
+max_grad_norm: 0.5
+hidden_dim: 128
+use_rnn: true
+share_param: true
+# PBFT 配置
+pbft_f: 2  # n_agents=12, f=2 (可容错2 个拜占庭)
+leader_rotation: true
+use_fallback: true
+consensus_temperature: 1.0
+consensus_threshold: 0.6
+consensus_loss_coef: 0.15

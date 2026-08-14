@@ -1,0 +1,5 @@
+env: mpe_spread
+scenario: simple_spread
+n_agents: 4
+max_steps: 100
+continuous_actions: false

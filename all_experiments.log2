@@ -1,0 +1,1279 @@
+
+==================== [Exp 1/72] algo=pbft_cg_mappo, env=mpe_spread, seed=1 (已用时 0s) ====================
+[2026-08-12 07:49:14][INFO] 开始On-policy训练: pbft_cg_mappo, 环境: mpe_spread
+[2026-08-12 07:49:14][INFO] 环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+自动加载环境配置: /root/autodl-tmp/PBFT-CG-MARL/configs/env/mpe_spread.yaml
+[警告] PettingZoo未安装，使用自定义MPE环境
+使用ENV_REGISTRY创建环境: mpe_spread
+环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+[DEBUG] 设备: cuda:0, 算法: cuda:0
+Traceback (most recent call last):
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 967, in <module>
+    main()
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 959, in main
+    train_on_policy(algorithm, env, logger, args, config)
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 464, in train_on_policy
+    actions, new_hidden_state, action_log_probs = algorithm.act(
+                                                  ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/algorithms/pbft_cg_mappo.py", line 201, in act
+    log_prob = action_dist.log_prob(ca.unsqueeze(0))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/distributions/categorical.py", line 143, in log_prob
+    return log_pmf.gather(-1, value).squeeze(-1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument index in method wrapper_CUDA_gather)
+✅ [Exp 1/72] 完成
+
+==================== [Exp 2/72] algo=pbft_cg_mappo, env=mpe_spread, seed=2 (已用时 4s) ====================
+[2026-08-12 07:49:17][INFO] 开始On-policy训练: pbft_cg_mappo, 环境: mpe_spread
+[2026-08-12 07:49:17][INFO] 环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+自动加载环境配置: /root/autodl-tmp/PBFT-CG-MARL/configs/env/mpe_spread.yaml
+[警告] PettingZoo未安装，使用自定义MPE环境
+使用ENV_REGISTRY创建环境: mpe_spread
+环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+[DEBUG] 设备: cuda:0, 算法: cuda:0
+Traceback (most recent call last):
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 967, in <module>
+    main()
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 959, in main
+    train_on_policy(algorithm, env, logger, args, config)
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 464, in train_on_policy
+    actions, new_hidden_state, action_log_probs = algorithm.act(
+                                                  ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/algorithms/pbft_cg_mappo.py", line 201, in act
+    log_prob = action_dist.log_prob(ca.unsqueeze(0))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/distributions/categorical.py", line 143, in log_prob
+    return log_pmf.gather(-1, value).squeeze(-1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument index in method wrapper_CUDA_gather)
+✅ [Exp 2/72] 完成
+
+==================== [Exp 3/72] algo=pbft_cg_mappo, env=mpe_spread, seed=3 (已用时 7s) ====================
+[2026-08-12 07:49:20][INFO] 开始On-policy训练: pbft_cg_mappo, 环境: mpe_spread
+[2026-08-12 07:49:20][INFO] 环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+自动加载环境配置: /root/autodl-tmp/PBFT-CG-MARL/configs/env/mpe_spread.yaml
+[警告] PettingZoo未安装，使用自定义MPE环境
+使用ENV_REGISTRY创建环境: mpe_spread
+环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+[DEBUG] 设备: cuda:0, 算法: cuda:0
+Traceback (most recent call last):
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 967, in <module>
+    main()
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 959, in main
+    train_on_policy(algorithm, env, logger, args, config)
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/train.py", line 464, in train_on_policy
+    actions, new_hidden_state, action_log_probs = algorithm.act(
+                                                  ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/PBFT-CG-MARL/src/algorithms/pbft_cg_mappo.py", line 201, in act
+    log_prob = action_dist.log_prob(ca.unsqueeze(0))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/distributions/categorical.py", line 143, in log_prob
+    return log_pmf.gather(-1, value).squeeze(-1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument index in method wrapper_CUDA_gather)
+✅ [Exp 3/72] 完成
+
+==================== [Exp 4/72] algo=mappo, env=mpe_spread, seed=1 (已用时 10s) ====================
+[2026-08-12 07:49:23][INFO] 开始On-policy训练: mappo, 环境: mpe_spread
+[2026-08-12 07:49:23][INFO] 环境信息: {'n_agents': 4, 'obs_shape': 18, 'state_shape': 72, 'action_shape': 5, 'action_type': 'discrete'}
+[2026-08-12 07:49:24][INFO] Step 1 | episode | episode_reward: -329.9146 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 0.5958
+[2026-08-12 07:49:24][INFO] Step 128 | train | value_loss: 2078.7292 | policy_loss: -0.0053 | entropy: 1.6094 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:24][INFO] Step 2 | episode | episode_reward: -342.5664 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 1.1292
+[2026-08-12 07:49:24][INFO] Step 256 | train | value_loss: 2195.4197 | policy_loss: -0.0008 | entropy: 1.6094 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:25][INFO] Step 3 | episode | episode_reward: -294.8859 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 1.4837
+[2026-08-12 07:49:25][INFO] Step 384 | train | value_loss: 2378.7098 | policy_loss: -0.0019 | entropy: 1.6093 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:25][INFO] Step 4 | episode | episode_reward: -347.1918 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 1.8483
+[2026-08-12 07:49:25][INFO] Step 5 | episode | episode_reward: -295.3179 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 2.1312
+[2026-08-12 07:49:25][INFO] Step 512 | train | value_loss: 1615.5660 | policy_loss: 0.0002 | entropy: 1.6092 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:26][INFO] Step 6 | episode | episode_reward: -308.0919 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 2.5018
+[2026-08-12 07:49:26][INFO] Step 640 | train | value_loss: 1998.7894 | policy_loss: 0.0012 | entropy: 1.6092 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:26][INFO] Step 7 | episode | episode_reward: -286.1368 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 2.8706
+[2026-08-12 07:49:26][INFO] Step 768 | train | value_loss: 1405.1999 | policy_loss: -0.0029 | entropy: 1.6090 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:26][INFO] Step 8 | episode | episode_reward: -291.3787 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 3.2320
+[2026-08-12 07:49:27][INFO] Step 896 | train | value_loss: 2133.9641 | policy_loss: -0.0028 | entropy: 1.6090 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:27][INFO] Step 9 | episode | episode_reward: -331.4639 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 3.5860
+[2026-08-12 07:49:27][INFO] Step 10 | episode | episode_reward: -338.8342 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 3.8817
+[2026-08-12 07:49:27][INFO] Step 1024 | train | value_loss: 2273.6494 | policy_loss: -0.0003 | entropy: 1.6090 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:27][INFO] Step 11 | episode | episode_reward: -324.2037 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 4.2385
+[2026-08-12 07:49:28][INFO] Step 1152 | train | value_loss: 1699.2734 | policy_loss: 0.0016 | entropy: 1.6088 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:28][INFO] Step 12 | episode | episode_reward: -325.2320 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 4.5979
+[2026-08-12 07:49:28][INFO] Step 1280 | train | value_loss: 1853.4760 | policy_loss: 0.0034 | entropy: 1.6088 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:28][INFO] Step 13 | episode | episode_reward: -261.7416 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 4.9634
+[2026-08-12 07:49:28][INFO] Step 14 | episode | episode_reward: -363.0212 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 5.2470
+[2026-08-12 07:49:28][INFO] Step 1408 | train | value_loss: 2499.7524 | policy_loss: -0.0071 | entropy: 1.6087 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:29][INFO] Step 15 | episode | episode_reward: -310.1327 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 5.6109
+[2026-08-12 07:49:29][INFO] Step 1536 | train | value_loss: 1834.4916 | policy_loss: 0.0024 | entropy: 1.6088 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:29][INFO] Step 16 | episode | episode_reward: -334.9843 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 5.9694
+[2026-08-12 07:49:29][INFO] Step 1664 | train | value_loss: 3355.7811 | policy_loss: 0.0002 | entropy: 1.6087 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:29][INFO] Step 17 | episode | episode_reward: -367.5582 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 6.3316
+[2026-08-12 07:49:30][INFO] Step 1792 | train | value_loss: 1631.1256 | policy_loss: -0.0060 | entropy: 1.6088 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:30][INFO] Step 18 | episode | episode_reward: -301.5175 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 6.6848
+[2026-08-12 07:49:30][INFO] Step 19 | episode | episode_reward: -286.2007 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 6.9727
+[2026-08-12 07:49:30][INFO] Step 1920 | train | value_loss: 1501.0173 | policy_loss: 0.0033 | entropy: 1.6087 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:30][INFO] Step 20 | episode | episode_reward: -278.9706 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 7.3396
+[2026-08-12 07:49:31][INFO] Step 2048 | train | value_loss: 1576.6148 | policy_loss: -0.0035 | entropy: 1.6086 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:31][INFO] Step 21 | episode | episode_reward: -259.9589 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 7.7005
+[2026-08-12 07:49:31][INFO] Step 2176 | train | value_loss: 1437.8630 | policy_loss: 0.0036 | entropy: 1.6087 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:31][INFO] Step 22 | episode | episode_reward: -291.0600 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 8.0621
+[2026-08-12 07:49:31][INFO] Step 23 | episode | episode_reward: -348.6721 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 8.3437
+[2026-08-12 07:49:32][INFO] Step 2304 | train | value_loss: 2561.2221 | policy_loss: -0.0005 | entropy: 1.6084 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:32][INFO] Step 24 | episode | episode_reward: -312.1819 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 8.7141
+[2026-08-12 07:49:32][INFO] Step 2432 | train | value_loss: 1728.2675 | policy_loss: 0.0016 | entropy: 1.6085 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:32][INFO] Step 25 | episode | episode_reward: -288.1177 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 9.0756
+[2026-08-12 07:49:32][INFO] Step 2560 | train | value_loss: 1708.6940 | policy_loss: -0.0065 | entropy: 1.6084 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:33][INFO] Step 26 | episode | episode_reward: -342.0544 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 9.4382
+[2026-08-12 07:49:33][INFO] Step 2688 | train | value_loss: 2100.6200 | policy_loss: 0.0018 | entropy: 1.6082 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:33][INFO] Step 27 | episode | episode_reward: -320.0744 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 9.8039
+[2026-08-12 07:49:33][INFO] Step 28 | episode | episode_reward: -216.1194 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 10.0882
+[2026-08-12 07:49:33][INFO] Step 2816 | train | value_loss: 830.0727 | policy_loss: -0.0054 | entropy: 1.6082 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:34][INFO] Step 29 | episode | episode_reward: -318.9861 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 10.4502
+[2026-08-12 07:49:34][INFO] Step 2944 | train | value_loss: 2127.6587 | policy_loss: 0.0071 | entropy: 1.6078 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:34][INFO] Step 30 | episode | episode_reward: -349.4084 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 10.8131
+[2026-08-12 07:49:34][INFO] Step 3072 | train | value_loss: 2970.2980 | policy_loss: 0.0068 | entropy: 1.6080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:34][INFO] Step 31 | episode | episode_reward: -402.7025 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 11.1732
+[2026-08-12 07:49:35][INFO] Step 32 | episode | episode_reward: -275.4394 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 11.4577
+[2026-08-12 07:49:35][INFO] Step 3200 | train | value_loss: 1651.8664 | policy_loss: -0.0066 | entropy: 1.6082 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:35][INFO] Step 33 | episode | episode_reward: -283.0385 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 11.8277
+[2026-08-12 07:49:35][INFO] Step 3328 | train | value_loss: 1529.4449 | policy_loss: 0.0033 | entropy: 1.6081 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:35][INFO] Step 34 | episode | episode_reward: -304.0117 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 12.1897
+[2026-08-12 07:49:36][INFO] Step 3456 | train | value_loss: 1632.0923 | policy_loss: -0.0059 | entropy: 1.6081 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:36][INFO] Step 35 | episode | episode_reward: -306.2081 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 12.5540
+[2026-08-12 07:49:36][INFO] Step 3584 | train | value_loss: 1774.9196 | policy_loss: -0.0056 | entropy: 1.6079 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:36][INFO] Step 36 | episode | episode_reward: -315.7934 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 12.9133
+[2026-08-12 07:49:36][INFO] Step 37 | episode | episode_reward: -268.3932 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 13.1880
+[2026-08-12 07:49:36][INFO] Step 3712 | train | value_loss: 1265.1589 | policy_loss: -0.0090 | entropy: 1.6082 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:37][INFO] Step 38 | episode | episode_reward: -269.8356 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 13.5559
+[2026-08-12 07:49:37][INFO] Step 3840 | train | value_loss: 1345.0148 | policy_loss: -0.0024 | entropy: 1.6080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:37][INFO] Step 39 | episode | episode_reward: -285.3069 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 13.9143
+[2026-08-12 07:49:37][INFO] Step 3968 | train | value_loss: 1783.3096 | policy_loss: 0.0084 | entropy: 1.6080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:37][INFO] Step 40 | episode | episode_reward: -320.8492 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 14.2838
+[2026-08-12 07:49:38][INFO] Step 4096 | train | value_loss: 2513.2841 | policy_loss: -0.0112 | entropy: 1.6081 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:38][INFO] Step 41 | episode | episode_reward: -379.8036 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 14.6341
+[2026-08-12 07:49:38][INFO] Step 42 | episode | episode_reward: -305.7503 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 14.9296
+[2026-08-12 07:49:38][INFO] Step 4224 | train | value_loss: 1546.1116 | policy_loss: -0.0071 | entropy: 1.6083 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:38][INFO] Step 43 | episode | episode_reward: -312.9024 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 15.2887
+[2026-08-12 07:49:39][INFO] Step 4352 | train | value_loss: 1647.4659 | policy_loss: 0.0039 | entropy: 1.6083 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:39][INFO] Step 44 | episode | episode_reward: -288.5804 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 15.6482
+[2026-08-12 07:49:39][INFO] Step 4480 | train | value_loss: 2008.3145 | policy_loss: 0.0121 | entropy: 1.6083 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:39][INFO] Step 45 | episode | episode_reward: -360.6968 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 16.0073
+[2026-08-12 07:49:39][INFO] Step 46 | episode | episode_reward: -307.4268 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 16.2903
+[2026-08-12 07:49:39][INFO] Step 4608 | train | value_loss: 1701.5639 | policy_loss: -0.0012 | entropy: 1.6080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:40][INFO] Step 47 | episode | episode_reward: -327.1194 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 16.6549
+[2026-08-12 07:49:40][INFO] Step 4736 | train | value_loss: 2090.3450 | policy_loss: 0.0085 | entropy: 1.6077 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:40][INFO] Step 48 | episode | episode_reward: -343.4496 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 17.0129
+[2026-08-12 07:49:40][INFO] Step 4864 | train | value_loss: 2332.8240 | policy_loss: 0.0098 | entropy: 1.6082 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:40][INFO] Step 49 | episode | episode_reward: -397.6948 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 17.3737
+[2026-08-12 07:49:41][INFO] Step 4992 | train | value_loss: 1791.5574 | policy_loss: 0.0075 | entropy: 1.6079 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:41][INFO] Step 50 | episode | episode_reward: -291.5275 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 17.7361
+[2026-08-12 07:49:41][INFO] Step 51 | episode | episode_reward: -262.8280 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 18.0209
+[2026-08-12 07:49:41][INFO] Step 5120 | train | value_loss: 1273.5733 | policy_loss: -0.0040 | entropy: 1.6077 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:41][INFO] Step 52 | episode | episode_reward: -310.0940 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 18.3785
+[2026-08-12 07:49:42][INFO] Step 5248 | train | value_loss: 1727.9074 | policy_loss: 0.0084 | entropy: 1.6078 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:42][INFO] Step 53 | episode | episode_reward: -309.6135 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 18.7413
+[2026-08-12 07:49:42][INFO] Step 5376 | train | value_loss: 1642.0667 | policy_loss: -0.0057 | entropy: 1.6077 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:42][INFO] Step 54 | episode | episode_reward: -257.5913 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 19.1016
+[2026-08-12 07:49:42][INFO] Step 55 | episode | episode_reward: -323.6573 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 19.3849
+[2026-08-12 07:49:43][INFO] Step 5504 | train | value_loss: 1727.1953 | policy_loss: -0.0107 | entropy: 1.6074 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:43][INFO] Step 56 | episode | episode_reward: -321.6709 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 19.7158
+[2026-08-12 07:49:43][INFO] Step 5632 | train | value_loss: 1741.4056 | policy_loss: -0.0093 | entropy: 1.6075 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:43][INFO] Step 57 | episode | episode_reward: -330.2393 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 20.0735
+[2026-08-12 07:49:43][INFO] Step 5760 | train | value_loss: 1800.2237 | policy_loss: -0.0110 | entropy: 1.6077 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:44][INFO] Step 58 | episode | episode_reward: -288.0907 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 20.4321
+[2026-08-12 07:49:44][INFO] Step 5888 | train | value_loss: 1828.1885 | policy_loss: 0.0012 | entropy: 1.6079 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:44][INFO] Step 59 | episode | episode_reward: -326.8688 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 20.7575
+[2026-08-12 07:49:44][INFO] Step 60 | episode | episode_reward: -325.8561 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 21.0394
+[2026-08-12 07:49:44][INFO] Step 6016 | train | value_loss: 1888.4114 | policy_loss: -0.0002 | entropy: 1.6077 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:44][INFO] Step 61 | episode | episode_reward: -338.7687 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 21.3965
+[2026-08-12 07:49:45][INFO] Step 6144 | train | value_loss: 2146.8093 | policy_loss: 0.0148 | entropy: 1.6074 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:45][INFO] Step 62 | episode | episode_reward: -312.2737 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 21.7620
+[2026-08-12 07:49:45][INFO] Step 6272 | train | value_loss: 1593.6313 | policy_loss: -0.0063 | entropy: 1.6074 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:45][INFO] Step 63 | episode | episode_reward: -318.0664 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 22.1216
+[2026-08-12 07:49:46][INFO] Step 64 | episode | episode_reward: -298.4516 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 22.4058
+[2026-08-12 07:49:46][INFO] Step 6400 | train | value_loss: 1692.2809 | policy_loss: -0.0089 | entropy: 1.6074 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:46][INFO] Step 65 | episode | episode_reward: -271.8473 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 22.7651
+[2026-08-12 07:49:46][INFO] Step 6528 | train | value_loss: 1319.9486 | policy_loss: -0.0053 | entropy: 1.6073 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:46][INFO] Step 66 | episode | episode_reward: -369.6968 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 23.1238
+[2026-08-12 07:49:46][INFO] Step 6656 | train | value_loss: 2290.1984 | policy_loss: -0.0044 | entropy: 1.6071 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:47][INFO] Step 67 | episode | episode_reward: -309.7610 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 23.4799
+[2026-08-12 07:49:47][INFO] Step 6784 | train | value_loss: 1794.3052 | policy_loss: 0.0034 | entropy: 1.6076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:47][INFO] Step 68 | episode | episode_reward: -333.2729 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 23.8443
+[2026-08-12 07:49:47][INFO] Step 69 | episode | episode_reward: -377.8356 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 24.1213
+[2026-08-12 07:49:47][INFO] Step 6912 | train | value_loss: 2440.6265 | policy_loss: 0.0013 | entropy: 1.6076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:48][INFO] Step 70 | episode | episode_reward: -290.7258 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 24.4898
+[2026-08-12 07:49:48][INFO] Step 7040 | train | value_loss: 1518.7661 | policy_loss: 0.0012 | entropy: 1.6076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:48][INFO] Step 71 | episode | episode_reward: -301.4977 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 24.8472
+[2026-08-12 07:49:48][INFO] Step 7168 | train | value_loss: 1878.2649 | policy_loss: -0.0020 | entropy: 1.6078 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:48][INFO] Step 72 | episode | episode_reward: -343.0612 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 25.1980
+[2026-08-12 07:49:49][INFO] Step 7296 | train | value_loss: 1369.5890 | policy_loss: 0.0025 | entropy: 1.6076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:49][INFO] Step 73 | episode | episode_reward: -279.3879 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 25.5514
+[2026-08-12 07:49:49][INFO] Step 74 | episode | episode_reward: -342.6019 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 25.8486
+[2026-08-12 07:49:49][INFO] Step 7424 | train | value_loss: 2014.4509 | policy_loss: 0.0060 | entropy: 1.6076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:49][INFO] Step 75 | episode | episode_reward: -280.9507 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 26.2172
+[2026-08-12 07:49:50][INFO] Step 7552 | train | value_loss: 1653.3102 | policy_loss: 0.0009 | entropy: 1.6080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:50][INFO] Step 76 | episode | episode_reward: -307.3638 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 26.5761
+[2026-08-12 07:49:50][INFO] Step 7680 | train | value_loss: 1003.7732 | policy_loss: -0.0127 | entropy: 1.6069 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:50][INFO] Step 77 | episode | episode_reward: -264.0610 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 26.9417
+[2026-08-12 07:49:50][INFO] Step 78 | episode | episode_reward: -338.3017 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 27.2243
+[2026-08-12 07:49:50][INFO] Step 7808 | train | value_loss: 2039.9841 | policy_loss: 0.0012 | entropy: 1.6073 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:51][INFO] Step 79 | episode | episode_reward: -291.0814 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 27.5837
+[2026-08-12 07:49:51][INFO] Step 7936 | train | value_loss: 1514.0937 | policy_loss: -0.0035 | entropy: 1.6073 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:51][INFO] Step 80 | episode | episode_reward: -321.9813 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 27.9007
+[2026-08-12 07:49:51][INFO] Step 8064 | train | value_loss: 2703.4910 | policy_loss: 0.0048 | entropy: 1.6073 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:51][INFO] Step 81 | episode | episode_reward: -376.2675 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 28.2747
+[2026-08-12 07:49:52][INFO] Step 8192 | train | value_loss: 1934.0377 | policy_loss: -0.0059 | entropy: 1.6067 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:52][INFO] Step 82 | episode | episode_reward: -328.2025 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 28.6011
+[2026-08-12 07:49:52][INFO] Step 83 | episode | episode_reward: -319.4429 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 28.8824
+[2026-08-12 07:49:52][INFO] Step 8320 | train | value_loss: 1668.4635 | policy_loss: 0.0004 | entropy: 1.6073 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:52][INFO] Step 84 | episode | episode_reward: -334.9034 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 29.2202
+[2026-08-12 07:49:53][INFO] Step 8448 | train | value_loss: 1750.9698 | policy_loss: 0.0113 | entropy: 1.6062 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:53][INFO] Step 85 | episode | episode_reward: -333.6161 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 29.5793
+[2026-08-12 07:49:53][INFO] Step 8576 | train | value_loss: 2059.6129 | policy_loss: 0.0138 | entropy: 1.6070 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:53][INFO] Step 86 | episode | episode_reward: -319.8406 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 29.9381
+[2026-08-12 07:49:53][INFO] Step 87 | episode | episode_reward: -360.9848 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 30.2239
+[2026-08-12 07:49:53][INFO] Step 8704 | train | value_loss: 2409.5688 | policy_loss: 0.0055 | entropy: 1.6070 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:54][INFO] Step 88 | episode | episode_reward: -288.7270 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 30.5903
+[2026-08-12 07:49:54][INFO] Step 8832 | train | value_loss: 1344.4198 | policy_loss: -0.0012 | entropy: 1.6067 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:54][INFO] Step 89 | episode | episode_reward: -268.4091 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 30.9575
+[2026-08-12 07:49:54][INFO] Step 8960 | train | value_loss: 1633.0287 | policy_loss: -0.0078 | entropy: 1.6054 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:54][INFO] Step 90 | episode | episode_reward: -363.5554 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 31.3221
+[2026-08-12 07:49:55][INFO] Step 9088 | train | value_loss: 1479.6081 | policy_loss: 0.0159 | entropy: 1.6060 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:55][INFO] Step 91 | episode | episode_reward: -258.5934 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 31.6811
+[2026-08-12 07:49:55][INFO] Step 92 | episode | episode_reward: -290.6873 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 31.9611
+[2026-08-12 07:49:55][INFO] Step 9216 | train | value_loss: 1288.0402 | policy_loss: -0.0110 | entropy: 1.6068 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:55][INFO] Step 93 | episode | episode_reward: -302.5212 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 32.3227
+[2026-08-12 07:49:56][INFO] Step 9344 | train | value_loss: 1615.6947 | policy_loss: -0.0067 | entropy: 1.6057 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:56][INFO] Step 94 | episode | episode_reward: -302.6403 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 32.6827
+[2026-08-12 07:49:56][INFO] Step 9472 | train | value_loss: 1173.4198 | policy_loss: 0.0091 | entropy: 1.6061 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:56][INFO] Step 95 | episode | episode_reward: -336.0076 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 33.0438
+[2026-08-12 07:49:56][INFO] Step 96 | episode | episode_reward: -282.9735 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 33.3235
+[2026-08-12 07:49:56][INFO] Step 9600 | train | value_loss: 1709.3072 | policy_loss: -0.0140 | entropy: 1.6044 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:57][INFO] Step 97 | episode | episode_reward: -294.7110 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 33.6832
+[2026-08-12 07:49:57][INFO] Step 9728 | train | value_loss: 1556.5738 | policy_loss: 0.0092 | entropy: 1.6062 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:57][INFO] Step 98 | episode | episode_reward: -335.8626 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 34.0443
+[2026-08-12 07:49:57][INFO] Step 9856 | train | value_loss: 1709.4766 | policy_loss: 0.0091 | entropy: 1.6054 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:58][INFO] Step 99 | episode | episode_reward: -313.2047 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 34.4073
+[2026-08-12 07:49:58][INFO] Step 9984 | train | value_loss: 1244.0438 | policy_loss: -0.0022 | entropy: 1.6055 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:58][INFO] Step 100 | episode | episode_reward: -303.1576 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 34.7694
+[2026-08-12 07:49:58][INFO] Step 101 | episode | episode_reward: -345.9883 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 35.0542
+[2026-08-12 07:49:58][INFO] Step 10112 | train | value_loss: 1914.5727 | policy_loss: 0.0063 | entropy: 1.6057 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:59][INFO] Step 102 | episode | episode_reward: -326.9711 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 35.4254
+[2026-08-12 07:49:59][INFO] Step 10240 | train | value_loss: 1877.6097 | policy_loss: -0.0082 | entropy: 1.6069 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:59][INFO] Step 103 | episode | episode_reward: -271.5963 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 35.7778
+[2026-08-12 07:49:59][INFO] Step 10368 | train | value_loss: 2055.3890 | policy_loss: 0.0354 | entropy: 1.6051 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:49:59][INFO] Step 104 | episode | episode_reward: -362.3557 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 36.1293
+[2026-08-12 07:50:00][INFO] Step 10496 | train | value_loss: 1423.4461 | policy_loss: -0.0112 | entropy: 1.6047 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:00][INFO] Step 105 | episode | episode_reward: -295.4745 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 36.4736
+[2026-08-12 07:50:00][INFO] Step 106 | episode | episode_reward: -272.4547 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 36.7577
+[2026-08-12 07:50:00][INFO] Step 10624 | train | value_loss: 1070.1147 | policy_loss: 0.0011 | entropy: 1.6049 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:00][INFO] Step 107 | episode | episode_reward: -269.8290 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 37.1098
+[2026-08-12 07:50:00][INFO] Step 10752 | train | value_loss: 1308.4543 | policy_loss: 0.0098 | entropy: 1.6047 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:01][INFO] Step 108 | episode | episode_reward: -331.7075 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 37.4611
+[2026-08-12 07:50:01][INFO] Step 10880 | train | value_loss: 1705.4361 | policy_loss: 0.0069 | entropy: 1.6035 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:01][INFO] Step 109 | episode | episode_reward: -289.8016 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 37.8214
+[2026-08-12 07:50:01][INFO] Step 110 | episode | episode_reward: -266.5659 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 38.0968
+[2026-08-12 07:50:01][INFO] Step 11008 | train | value_loss: 1102.7322 | policy_loss: 0.0147 | entropy: 1.6053 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:02][INFO] Step 111 | episode | episode_reward: -278.3887 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 38.4496
+[2026-08-12 07:50:02][INFO] Step 11136 | train | value_loss: 1247.8031 | policy_loss: -0.0298 | entropy: 1.6038 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:02][INFO] Step 112 | episode | episode_reward: -287.4879 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 38.8016
+[2026-08-12 07:50:02][INFO] Step 11264 | train | value_loss: 1513.3976 | policy_loss: -0.0126 | entropy: 1.6035 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:02][INFO] Step 113 | episode | episode_reward: -325.0985 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 39.1554
+[2026-08-12 07:50:03][INFO] Step 11392 | train | value_loss: 1495.8333 | policy_loss: 0.0119 | entropy: 1.6042 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:03][INFO] Step 114 | episode | episode_reward: -309.9448 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 39.4689
+[2026-08-12 07:50:03][INFO] Step 115 | episode | episode_reward: -272.9339 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 39.7454
+[2026-08-12 07:50:03][INFO] Step 11520 | train | value_loss: 1235.6233 | policy_loss: -0.0122 | entropy: 1.6048 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:03][INFO] Step 116 | episode | episode_reward: -245.4585 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 40.0939
+[2026-08-12 07:50:03][INFO] Step 11648 | train | value_loss: 955.0761 | policy_loss: 0.0098 | entropy: 1.6041 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:04][INFO] Step 117 | episode | episode_reward: -296.2162 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 40.4085
+[2026-08-12 07:50:04][INFO] Step 11776 | train | value_loss: 1367.1841 | policy_loss: 0.0265 | entropy: 1.6039 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:04][INFO] Step 118 | episode | episode_reward: -319.3297 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 40.7241
+[2026-08-12 07:50:04][INFO] Step 119 | episode | episode_reward: -305.2499 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 40.9988
+[2026-08-12 07:50:04][INFO] Step 11904 | train | value_loss: 1626.0033 | policy_loss: -0.0095 | entropy: 1.6018 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:04][INFO] Step 120 | episode | episode_reward: -277.6362 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 41.3514
+[2026-08-12 07:50:05][INFO] Step 12032 | train | value_loss: 1192.1270 | policy_loss: -0.0035 | entropy: 1.6055 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:05][INFO] Step 121 | episode | episode_reward: -251.6234 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 41.7035
+[2026-08-12 07:50:05][INFO] Step 12160 | train | value_loss: 1159.7901 | policy_loss: 0.0173 | entropy: 1.6015 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:05][INFO] Step 122 | episode | episode_reward: -256.6548 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 42.0549
+[2026-08-12 07:50:05][INFO] Step 12288 | train | value_loss: 1116.1163 | policy_loss: 0.0194 | entropy: 1.6014 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:06][INFO] Step 123 | episode | episode_reward: -298.9382 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 42.4129
+[2026-08-12 07:50:06][INFO] Step 124 | episode | episode_reward: -314.7371 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 42.6886
+[2026-08-12 07:50:06][INFO] Step 12416 | train | value_loss: 1390.1968 | policy_loss: 0.0004 | entropy: 1.6003 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:06][INFO] Step 125 | episode | episode_reward: -349.9236 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 43.0408
+[2026-08-12 07:50:06][INFO] Step 12544 | train | value_loss: 2148.5413 | policy_loss: -0.0018 | entropy: 1.6017 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:06][INFO] Step 126 | episode | episode_reward: -381.3076 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 43.3940
+[2026-08-12 07:50:07][INFO] Step 12672 | train | value_loss: 1510.1625 | policy_loss: 0.0011 | entropy: 1.5968 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:07][INFO] Step 127 | episode | episode_reward: -314.9654 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 43.7456
+[2026-08-12 07:50:07][INFO] Step 128 | episode | episode_reward: -335.9491 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 44.0206
+[2026-08-12 07:50:07][INFO] Step 12800 | train | value_loss: 2262.1277 | policy_loss: 0.0193 | entropy: 1.5977 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:07][INFO] Step 129 | episode | episode_reward: -379.7471 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 44.3723
+[2026-08-12 07:50:08][INFO] Step 12928 | train | value_loss: 2370.4309 | policy_loss: 0.0086 | entropy: 1.5987 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:08][INFO] Step 130 | episode | episode_reward: -361.7662 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 44.7310
+[2026-08-12 07:50:08][INFO] Step 13056 | train | value_loss: 2366.1725 | policy_loss: 0.0570 | entropy: 1.5962 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:08][INFO] Step 131 | episode | episode_reward: -354.0766 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 45.0852
+[2026-08-12 07:50:08][INFO] Step 13184 | train | value_loss: 1480.2682 | policy_loss: 0.0248 | entropy: 1.5992 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:09][INFO] Step 132 | episode | episode_reward: -287.0935 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 45.4373
+[2026-08-12 07:50:09][INFO] Step 133 | episode | episode_reward: -345.8127 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 45.7131
+[2026-08-12 07:50:09][INFO] Step 13312 | train | value_loss: 1758.6353 | policy_loss: 0.0051 | entropy: 1.5952 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:09][INFO] Step 134 | episode | episode_reward: -346.6666 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 46.0648
+[2026-08-12 07:50:09][INFO] Step 13440 | train | value_loss: 1725.3762 | policy_loss: 0.0076 | entropy: 1.5988 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:10][INFO] Step 135 | episode | episode_reward: -252.1302 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 46.4172
+[2026-08-12 07:50:10][INFO] Step 13568 | train | value_loss: 1015.4525 | policy_loss: 0.0505 | entropy: 1.5967 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:10][INFO] Step 136 | episode | episode_reward: -297.6339 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 46.7715
+[2026-08-12 07:50:10][INFO] Step 13696 | train | value_loss: 1752.0669 | policy_loss: 0.0253 | entropy: 1.5885 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:10][INFO] Step 137 | episode | episode_reward: -336.6166 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 47.1139
+[2026-08-12 07:50:11][INFO] Step 138 | episode | episode_reward: -331.5240 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 47.4030
+[2026-08-12 07:50:11][INFO] Step 13824 | train | value_loss: 1754.1665 | policy_loss: 0.0644 | entropy: 1.5900 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:11][INFO] Step 139 | episode | episode_reward: -341.9426 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 47.7663
+[2026-08-12 07:50:11][INFO] Step 13952 | train | value_loss: 2638.2192 | policy_loss: -0.0080 | entropy: 1.5773 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:11][INFO] Step 140 | episode | episode_reward: -413.3650 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 48.1231
+[2026-08-12 07:50:12][INFO] Step 14080 | train | value_loss: 1861.1766 | policy_loss: 0.0293 | entropy: 1.5822 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:12][INFO] Step 141 | episode | episode_reward: -341.7501 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 48.4825
+[2026-08-12 07:50:12][INFO] Step 142 | episode | episode_reward: -313.8603 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 48.7640
+[2026-08-12 07:50:12][INFO] Step 14208 | train | value_loss: 1618.2262 | policy_loss: 0.0203 | entropy: 1.5919 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:12][INFO] Step 143 | episode | episode_reward: -359.4443 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 49.1205
+[2026-08-12 07:50:12][INFO] Step 14336 | train | value_loss: 1966.6134 | policy_loss: 0.0501 | entropy: 1.5792 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:13][INFO] Step 144 | episode | episode_reward: -301.1943 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 49.4824
+[2026-08-12 07:50:13][INFO] Step 14464 | train | value_loss: 1459.3169 | policy_loss: 0.0390 | entropy: 1.5761 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:13][INFO] Step 145 | episode | episode_reward: -315.8141 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 49.8180
+[2026-08-12 07:50:13][INFO] Step 14592 | train | value_loss: 2929.6221 | policy_loss: 0.0292 | entropy: 1.5708 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:13][INFO] Step 146 | episode | episode_reward: -407.6535 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 50.1463
+[2026-08-12 07:50:14][INFO] Step 147 | episode | episode_reward: -346.5420 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 50.4268
+[2026-08-12 07:50:14][INFO] Step 14720 | train | value_loss: 1778.2643 | policy_loss: 0.0573 | entropy: 1.5648 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:14][INFO] Step 148 | episode | episode_reward: -321.9156 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 50.7912
+[2026-08-12 07:50:14][INFO] Step 14848 | train | value_loss: 1729.6728 | policy_loss: 0.0107 | entropy: 1.5664 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:14][INFO] Step 149 | episode | episode_reward: -338.9416 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 51.1478
+[2026-08-12 07:50:15][INFO] Step 14976 | train | value_loss: 1496.9457 | policy_loss: 0.1138 | entropy: 1.5642 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:15][INFO] Step 150 | episode | episode_reward: -297.6885 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 51.5200
+[2026-08-12 07:50:15][INFO] Step 151 | episode | episode_reward: -389.2285 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 51.9074
+[2026-08-12 07:50:15][INFO] Step 15104 | train | value_loss: 2692.1792 | policy_loss: 0.0325 | entropy: 1.5486 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:15][INFO] Step 152 | episode | episode_reward: -361.4168 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 52.3651
+[2026-08-12 07:50:16][INFO] Step 15232 | train | value_loss: 2199.2674 | policy_loss: 0.1053 | entropy: 1.5462 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:16][INFO] Step 153 | episode | episode_reward: -372.2346 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 52.8205
+[2026-08-12 07:50:16][INFO] Step 15360 | train | value_loss: 2573.5194 | policy_loss: 0.0801 | entropy: 1.5391 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:16][INFO] Step 154 | episode | episode_reward: -367.5721 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 53.2699
+[2026-08-12 07:50:17][INFO] Step 15488 | train | value_loss: 1504.8295 | policy_loss: 0.0958 | entropy: 1.5516 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:17][INFO] Step 155 | episode | episode_reward: -315.6180 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 53.7231
+[2026-08-12 07:50:17][INFO] Step 156 | episode | episode_reward: -335.5070 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 54.1087
+[2026-08-12 07:50:17][INFO] Step 15616 | train | value_loss: 1823.6708 | policy_loss: 0.0686 | entropy: 1.5254 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:18][INFO] Step 157 | episode | episode_reward: -332.2245 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 54.5307
+[2026-08-12 07:50:18][INFO] Step 15744 | train | value_loss: 1764.0222 | policy_loss: 0.1200 | entropy: 1.5322 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:18][INFO] Step 158 | episode | episode_reward: -369.0536 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 54.8825
+[2026-08-12 07:50:18][INFO] Step 15872 | train | value_loss: 2478.8859 | policy_loss: 0.0886 | entropy: 1.4973 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:18][INFO] Step 159 | episode | episode_reward: -375.5952 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 55.2338
+[2026-08-12 07:50:19][INFO] Step 160 | episode | episode_reward: -298.0595 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 55.5075
+[2026-08-12 07:50:19][INFO] Step 16000 | train | value_loss: 1310.2519 | policy_loss: 0.0982 | entropy: 1.4971 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:19][INFO] Step 161 | episode | episode_reward: -351.9289 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 55.8573
+[2026-08-12 07:50:19][INFO] Step 16128 | train | value_loss: 1831.9104 | policy_loss: 0.1131 | entropy: 1.4817 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:19][INFO] Step 162 | episode | episode_reward: -279.6932 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 56.2088
+[2026-08-12 07:50:20][INFO] Step 16256 | train | value_loss: 1202.0581 | policy_loss: 0.1689 | entropy: 1.4675 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:20][INFO] Step 163 | episode | episode_reward: -273.5420 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 56.5650
+[2026-08-12 07:50:20][INFO] Step 16384 | train | value_loss: 1309.1863 | policy_loss: 0.1199 | entropy: 1.4790 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:20][INFO] Step 164 | episode | episode_reward: -294.1420 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 56.9160
+[2026-08-12 07:50:20][INFO] Step 165 | episode | episode_reward: -304.4276 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 57.1910
+[2026-08-12 07:50:20][INFO] Step 16512 | train | value_loss: 1383.9369 | policy_loss: 0.1130 | entropy: 1.4070 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:21][INFO] Step 166 | episode | episode_reward: -312.4658 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 57.5412
+[2026-08-12 07:50:21][INFO] Step 16640 | train | value_loss: 1528.1921 | policy_loss: 0.1359 | entropy: 1.3726 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:21][INFO] Step 167 | episode | episode_reward: -303.3024 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 57.8916
+[2026-08-12 07:50:21][INFO] Step 16768 | train | value_loss: 1307.4025 | policy_loss: 0.1085 | entropy: 1.3185 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:21][INFO] Step 168 | episode | episode_reward: -331.5254 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 58.2405
+[2026-08-12 07:50:22][INFO] Step 16896 | train | value_loss: 1933.1723 | policy_loss: 0.1316 | entropy: 1.3066 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:22][INFO] Step 169 | episode | episode_reward: -331.1052 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 58.5823
+[2026-08-12 07:50:22][INFO] Step 170 | episode | episode_reward: -328.1916 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 58.8687
+[2026-08-12 07:50:22][INFO] Step 17024 | train | value_loss: 1619.8592 | policy_loss: 0.1765 | entropy: 1.3027 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:22][INFO] Step 171 | episode | episode_reward: -337.3494 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 59.2280
+[2026-08-12 07:50:23][INFO] Step 17152 | train | value_loss: 1618.4361 | policy_loss: 0.1717 | entropy: 1.2397 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:23][INFO] Step 172 | episode | episode_reward: -329.3780 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 59.5815
+[2026-08-12 07:50:23][INFO] Step 17280 | train | value_loss: 1876.1728 | policy_loss: 0.1616 | entropy: 1.1635 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:23][INFO] Step 173 | episode | episode_reward: -399.5199 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 59.9307
+[2026-08-12 07:50:23][INFO] Step 174 | episode | episode_reward: -373.2052 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 60.2027
+[2026-08-12 07:50:23][INFO] Step 17408 | train | value_loss: 2286.3858 | policy_loss: 0.0932 | entropy: 1.1214 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:24][INFO] Step 175 | episode | episode_reward: -313.5934 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 60.5526
+[2026-08-12 07:50:24][INFO] Step 17536 | train | value_loss: 1471.1071 | policy_loss: 0.0902 | entropy: 1.1982 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:24][INFO] Step 176 | episode | episode_reward: -311.1433 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 60.8636
+[2026-08-12 07:50:24][INFO] Step 17664 | train | value_loss: 1730.6864 | policy_loss: 0.2240 | entropy: 1.1192 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:24][INFO] Step 177 | episode | episode_reward: -340.9581 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 61.2008
+[2026-08-12 07:50:25][INFO] Step 17792 | train | value_loss: 1977.2634 | policy_loss: 0.1380 | entropy: 1.1355 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:25][INFO] Step 178 | episode | episode_reward: -349.1447 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 61.5576
+[2026-08-12 07:50:25][INFO] Step 179 | episode | episode_reward: -338.2127 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 61.8393
+[2026-08-12 07:50:25][INFO] Step 17920 | train | value_loss: 1725.4968 | policy_loss: 0.0719 | entropy: 1.1486 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:25][INFO] Step 180 | episode | episode_reward: -315.3276 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 62.1787
+[2026-08-12 07:50:25][INFO] Step 18048 | train | value_loss: 1577.9606 | policy_loss: 0.1438 | entropy: 1.0135 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:26][INFO] Step 181 | episode | episode_reward: -333.8975 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 62.5309
+[2026-08-12 07:50:26][INFO] Step 18176 | train | value_loss: 1217.6333 | policy_loss: 0.1731 | entropy: 1.0034 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:26][INFO] Step 182 | episode | episode_reward: -279.0642 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 62.8782
+[2026-08-12 07:50:26][INFO] Step 183 | episode | episode_reward: -313.5829 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 63.1507
+[2026-08-12 07:50:26][INFO] Step 18304 | train | value_loss: 1448.9659 | policy_loss: 0.1997 | entropy: 1.0163 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:27][INFO] Step 184 | episode | episode_reward: -370.8605 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 63.5055
+[2026-08-12 07:50:27][INFO] Step 18432 | train | value_loss: 2135.4533 | policy_loss: 0.2042 | entropy: 0.9619 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:27][INFO] Step 185 | episode | episode_reward: -303.6451 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 63.8599
+[2026-08-12 07:50:27][INFO] Step 18560 | train | value_loss: 1302.7347 | policy_loss: 0.0991 | entropy: 0.8758 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:27][INFO] Step 186 | episode | episode_reward: -301.3124 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 64.2096
+[2026-08-12 07:50:28][INFO] Step 18688 | train | value_loss: 1171.6118 | policy_loss: 0.1044 | entropy: 0.8020 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:28][INFO] Step 187 | episode | episode_reward: -291.2337 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 64.5590
+[2026-08-12 07:50:28][INFO] Step 188 | episode | episode_reward: -307.2808 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 64.8389
+[2026-08-12 07:50:28][INFO] Step 18816 | train | value_loss: 1307.7565 | policy_loss: 0.3089 | entropy: 0.8157 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:28][INFO] Step 189 | episode | episode_reward: -332.2722 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 65.1990
+[2026-08-12 07:50:28][INFO] Step 18944 | train | value_loss: 1362.0439 | policy_loss: 0.1880 | entropy: 0.7737 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:29][INFO] Step 190 | episode | episode_reward: -270.1786 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 65.5538
+[2026-08-12 07:50:29][INFO] Step 19072 | train | value_loss: 1616.6036 | policy_loss: 0.2505 | entropy: 0.6803 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:29][INFO] Step 191 | episode | episode_reward: -344.5971 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 65.9146
+[2026-08-12 07:50:29][INFO] Step 192 | episode | episode_reward: -332.1452 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 66.1876
+[2026-08-12 07:50:29][INFO] Step 19200 | train | value_loss: 1604.4275 | policy_loss: 0.1369 | entropy: 0.7883 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:30][INFO] Step 193 | episode | episode_reward: -318.3921 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 66.5477
+[2026-08-12 07:50:30][INFO] Step 19328 | train | value_loss: 1528.1885 | policy_loss: 0.0507 | entropy: 0.8583 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:30][INFO] Step 194 | episode | episode_reward: -303.6962 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 66.9028
+[2026-08-12 07:50:30][INFO] Step 19456 | train | value_loss: 1424.6378 | policy_loss: 0.1002 | entropy: 0.7100 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:30][INFO] Step 195 | episode | episode_reward: -361.1973 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 67.2640
+[2026-08-12 07:50:31][INFO] Step 19584 | train | value_loss: 2037.5219 | policy_loss: 0.1103 | entropy: 0.6688 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:31][INFO] Step 196 | episode | episode_reward: -352.4170 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 67.6192
+[2026-08-12 07:50:31][INFO] Step 197 | episode | episode_reward: -329.2452 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 67.8983
+[2026-08-12 07:50:31][INFO] Step 19712 | train | value_loss: 1525.3800 | policy_loss: 0.1300 | entropy: 0.7005 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:31][INFO] Step 198 | episode | episode_reward: -300.5319 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 68.2571
+[2026-08-12 07:50:32][INFO] Step 19840 | train | value_loss: 1883.7015 | policy_loss: 0.0710 | entropy: 0.7668 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:32][INFO] Step 199 | episode | episode_reward: -392.7958 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 68.6169
+[2026-08-12 07:50:32][INFO] Step 19968 | train | value_loss: 1652.8323 | policy_loss: 0.0462 | entropy: 0.6498 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:32][INFO] Step 200 | episode | episode_reward: -325.1646 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 68.9768
+[2026-08-12 07:50:32][INFO] Step 20096 | train | value_loss: 1527.7281 | policy_loss: 0.0383 | entropy: 0.5682 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:32][INFO] Step 201 | episode | episode_reward: -316.4618 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 69.3260
+[2026-08-12 07:50:33][INFO] Step 202 | episode | episode_reward: -334.5712 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 69.6141
+[2026-08-12 07:50:33][INFO] Step 20224 | train | value_loss: 1590.0401 | policy_loss: 0.1184 | entropy: 0.4912 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:33][INFO] Step 203 | episode | episode_reward: -246.6644 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 69.9715
+[2026-08-12 07:50:33][INFO] Step 20352 | train | value_loss: 965.3850 | policy_loss: 0.1271 | entropy: 0.5442 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:33][INFO] Step 204 | episode | episode_reward: -294.4808 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 70.3287
+[2026-08-12 07:50:34][INFO] Step 20480 | train | value_loss: 1862.4029 | policy_loss: 0.1357 | entropy: 0.5570 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:34][INFO] Step 205 | episode | episode_reward: -359.6225 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 70.6799
+[2026-08-12 07:50:34][INFO] Step 206 | episode | episode_reward: -289.5620 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 70.9534
+[2026-08-12 07:50:34][INFO] Step 20608 | train | value_loss: 1108.7812 | policy_loss: 0.0498 | entropy: 0.4756 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:34][INFO] Step 207 | episode | episode_reward: -208.0388 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 71.3034
+[2026-08-12 07:50:35][INFO] Step 20736 | train | value_loss: 569.6776 | policy_loss: 0.0494 | entropy: 0.5832 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:35][INFO] Step 208 | episode | episode_reward: -323.7860 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 71.6533
+[2026-08-12 07:50:35][INFO] Step 20864 | train | value_loss: 1174.3898 | policy_loss: 0.1081 | entropy: 0.6669 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:35][INFO] Step 209 | episode | episode_reward: -162.2216 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 72.0027
+[2026-08-12 07:50:35][INFO] Step 20992 | train | value_loss: 834.6567 | policy_loss: 0.0477 | entropy: 0.5834 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:35][INFO] Step 210 | episode | episode_reward: -254.3221 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 72.3457
+[2026-08-12 07:50:36][INFO] Step 211 | episode | episode_reward: -272.4003 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 72.6329
+[2026-08-12 07:50:36][INFO] Step 21120 | train | value_loss: 1027.9881 | policy_loss: 0.1212 | entropy: 0.4346 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:36][INFO] Step 212 | episode | episode_reward: -357.7528 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 73.0011
+[2026-08-12 07:50:36][INFO] Step 21248 | train | value_loss: 1534.4715 | policy_loss: 0.0777 | entropy: 0.4080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:36][INFO] Step 213 | episode | episode_reward: -207.6969 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 73.3510
+[2026-08-12 07:50:37][INFO] Step 21376 | train | value_loss: 851.1017 | policy_loss: 0.0344 | entropy: 0.4226 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:37][INFO] Step 214 | episode | episode_reward: -262.8662 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 73.7015
+[2026-08-12 07:50:37][INFO] Step 215 | episode | episode_reward: -362.5739 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 73.9746
+[2026-08-12 07:50:37][INFO] Step 21504 | train | value_loss: 1949.2860 | policy_loss: 0.4372 | entropy: 0.6313 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:37][INFO] Step 216 | episode | episode_reward: -244.5509 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 74.3251
+[2026-08-12 07:50:38][INFO] Step 21632 | train | value_loss: 1059.5409 | policy_loss: 0.0486 | entropy: 0.5358 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:38][INFO] Step 217 | episode | episode_reward: -401.0587 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 74.6743
+[2026-08-12 07:50:38][INFO] Step 21760 | train | value_loss: 1850.8868 | policy_loss: -0.0067 | entropy: 0.3754 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:38][INFO] Step 218 | episode | episode_reward: -286.0865 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 75.0252
+[2026-08-12 07:50:38][INFO] Step 21888 | train | value_loss: 584.1018 | policy_loss: 0.0296 | entropy: 0.3708 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:38][INFO] Step 219 | episode | episode_reward: -197.2236 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 75.3818
+[2026-08-12 07:50:39][INFO] Step 220 | episode | episode_reward: -250.3037 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 75.6548
+[2026-08-12 07:50:39][INFO] Step 22016 | train | value_loss: 779.5825 | policy_loss: 0.0324 | entropy: 0.4264 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:39][INFO] Step 221 | episode | episode_reward: -233.7545 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 76.0044
+[2026-08-12 07:50:39][INFO] Step 22144 | train | value_loss: 920.2544 | policy_loss: 0.0592 | entropy: 0.4969 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:39][INFO] Step 222 | episode | episode_reward: -264.7009 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 76.3537
+[2026-08-12 07:50:40][INFO] Step 22272 | train | value_loss: 339.9403 | policy_loss: 0.1505 | entropy: 0.4751 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:40][INFO] Step 223 | episode | episode_reward: -143.8875 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 76.7033
+[2026-08-12 07:50:40][INFO] Step 224 | episode | episode_reward: -251.0811 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 76.9756
+[2026-08-12 07:50:40][INFO] Step 22400 | train | value_loss: 760.0836 | policy_loss: 0.0458 | entropy: 0.3168 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:40][INFO] Step 225 | episode | episode_reward: -284.3378 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 77.3244
+[2026-08-12 07:50:41][INFO] Step 22528 | train | value_loss: 1036.6551 | policy_loss: 0.0293 | entropy: 0.3585 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:41][INFO] Step 226 | episode | episode_reward: -265.5152 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 77.6688
+[2026-08-12 07:50:41][INFO] Step 22656 | train | value_loss: 848.7142 | policy_loss: 0.0743 | entropy: 0.4173 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:41][INFO] Step 227 | episode | episode_reward: -227.9449 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 78.0165
+[2026-08-12 07:50:41][INFO] Step 22784 | train | value_loss: 696.0278 | policy_loss: 0.0529 | entropy: 0.3957 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:41][INFO] Step 228 | episode | episode_reward: -233.2606 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 78.3667
+[2026-08-12 07:50:42][INFO] Step 229 | episode | episode_reward: -240.0224 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 78.6482
+[2026-08-12 07:50:42][INFO] Step 22912 | train | value_loss: 694.8559 | policy_loss: 0.0146 | entropy: 0.3327 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:42][INFO] Step 230 | episode | episode_reward: -338.3684 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 79.0007
+[2026-08-12 07:50:42][INFO] Step 23040 | train | value_loss: 1300.2234 | policy_loss: 0.0288 | entropy: 0.4131 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:42][INFO] Step 231 | episode | episode_reward: -177.7650 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 79.3514
+[2026-08-12 07:50:43][INFO] Step 23168 | train | value_loss: 407.9313 | policy_loss: 0.0505 | entropy: 0.4046 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:43][INFO] Step 232 | episode | episode_reward: -192.0674 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 79.7081
+[2026-08-12 07:50:43][INFO] Step 23296 | train | value_loss: 887.5219 | policy_loss: 0.1271 | entropy: 0.3315 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:43][INFO] Step 233 | episode | episode_reward: -263.6464 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 80.0507
+[2026-08-12 07:50:43][INFO] Step 234 | episode | episode_reward: -242.4559 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 80.3330
+[2026-08-12 07:50:44][INFO] Step 23424 | train | value_loss: 779.2730 | policy_loss: 0.0525 | entropy: 0.3624 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:44][INFO] Step 235 | episode | episode_reward: -323.3452 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 80.6825
+[2026-08-12 07:50:44][INFO] Step 23552 | train | value_loss: 1346.6602 | policy_loss: 0.0318 | entropy: 0.4425 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:44][INFO] Step 236 | episode | episode_reward: -274.5899 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 81.0318
+[2026-08-12 07:50:44][INFO] Step 23680 | train | value_loss: 443.5371 | policy_loss: 0.0331 | entropy: 0.2774 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:44][INFO] Step 237 | episode | episode_reward: -165.6252 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 81.3844
+[2026-08-12 07:50:45][INFO] Step 238 | episode | episode_reward: -211.0513 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 81.6572
+[2026-08-12 07:50:45][INFO] Step 23808 | train | value_loss: 512.3753 | policy_loss: 0.0467 | entropy: 0.3295 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:45][INFO] Step 239 | episode | episode_reward: -236.6917 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 82.0068
+[2026-08-12 07:50:45][INFO] Step 23936 | train | value_loss: 774.1034 | policy_loss: -0.0208 | entropy: 0.2603 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:45][INFO] Step 240 | episode | episode_reward: -276.4405 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 82.3690
+[2026-08-12 07:50:46][INFO] Step 24064 | train | value_loss: 583.6874 | policy_loss: -0.0179 | entropy: 0.2758 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:46][INFO] Step 241 | episode | episode_reward: -132.6491 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 82.7353
+[2026-08-12 07:50:46][INFO] Step 24192 | train | value_loss: 1167.2078 | policy_loss: 0.0677 | entropy: 0.2601 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:46][INFO] Step 242 | episode | episode_reward: -289.3203 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 83.0954
+[2026-08-12 07:50:46][INFO] Step 243 | episode | episode_reward: -256.2725 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 83.3754
+[2026-08-12 07:50:47][INFO] Step 24320 | train | value_loss: 815.2955 | policy_loss: 0.0113 | entropy: 0.3383 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:47][INFO] Step 244 | episode | episode_reward: -382.1660 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 83.7250
+[2026-08-12 07:50:47][INFO] Step 24448 | train | value_loss: 2313.2794 | policy_loss: 0.1338 | entropy: 0.3382 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:47][INFO] Step 245 | episode | episode_reward: -291.2057 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 84.0894
+[2026-08-12 07:50:47][INFO] Step 24576 | train | value_loss: 446.9893 | policy_loss: 0.0669 | entropy: 0.2558 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:48][INFO] Step 246 | episode | episode_reward: -143.9133 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 84.4430
+[2026-08-12 07:50:48][INFO] Step 247 | episode | episode_reward: -234.2011 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 84.7201
+[2026-08-12 07:50:48][INFO] Step 24704 | train | value_loss: 664.1055 | policy_loss: 0.0756 | entropy: 0.3762 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:48][INFO] Step 248 | episode | episode_reward: -254.6479 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 85.0759
+[2026-08-12 07:50:48][INFO] Step 24832 | train | value_loss: 937.7725 | policy_loss: 0.0708 | entropy: 0.3399 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:49][INFO] Step 249 | episode | episode_reward: -250.3752 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 85.4404
+[2026-08-12 07:50:49][INFO] Step 24960 | train | value_loss: 562.2747 | policy_loss: -0.0125 | entropy: 0.2687 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:49][INFO] Step 250 | episode | episode_reward: -168.7229 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 85.8014
+[2026-08-12 07:50:49][INFO] Step 25088 | train | value_loss: 368.4538 | policy_loss: 0.0112 | entropy: 0.2677 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:49][INFO] Step 251 | episode | episode_reward: -181.5166 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 86.1572
+[2026-08-12 07:50:50][INFO] Step 252 | episode | episode_reward: -236.9447 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 86.4302
+[2026-08-12 07:50:50][INFO] Step 25216 | train | value_loss: 662.6882 | policy_loss: 0.0068 | entropy: 0.3098 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:50][INFO] Step 253 | episode | episode_reward: -226.9087 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 86.8011
+[2026-08-12 07:50:50][INFO] Step 25344 | train | value_loss: 739.5732 | policy_loss: 0.0136 | entropy: 0.2416 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:50][INFO] Step 254 | episode | episode_reward: -255.7734 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 87.1634
+[2026-08-12 07:50:51][INFO] Step 25472 | train | value_loss: 485.3974 | policy_loss: 0.0858 | entropy: 0.3003 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:51][INFO] Step 255 | episode | episode_reward: -185.3257 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 87.5211
+[2026-08-12 07:50:51][INFO] Step 256 | episode | episode_reward: -300.0803 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 87.7931
+[2026-08-12 07:50:51][INFO] Step 25600 | train | value_loss: 1144.0207 | policy_loss: 0.0905 | entropy: 0.3501 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:51][INFO] Step 257 | episode | episode_reward: -199.1441 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 88.1435
+[2026-08-12 07:50:51][INFO] Step 25728 | train | value_loss: 463.9051 | policy_loss: 0.0157 | entropy: 0.3742 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:52][INFO] Step 258 | episode | episode_reward: -268.3503 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 88.4965
+[2026-08-12 07:50:52][INFO] Step 25856 | train | value_loss: 562.7597 | policy_loss: 0.0440 | entropy: 0.2625 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:52][INFO] Step 259 | episode | episode_reward: -136.9788 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 88.8461
+[2026-08-12 07:50:52][INFO] Step 25984 | train | value_loss: 276.6378 | policy_loss: 0.0548 | entropy: 0.2240 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:52][INFO] Step 260 | episode | episode_reward: -162.1731 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 89.2000
+[2026-08-12 07:50:53][INFO] Step 261 | episode | episode_reward: -286.9808 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 89.4739
+[2026-08-12 07:50:53][INFO] Step 26112 | train | value_loss: 1058.5585 | policy_loss: 0.0960 | entropy: 0.3000 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:53][INFO] Step 262 | episode | episode_reward: -263.8707 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 89.8237
+[2026-08-12 07:50:53][INFO] Step 26240 | train | value_loss: 909.1072 | policy_loss: 0.0389 | entropy: 0.2983 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:53][INFO] Step 263 | episode | episode_reward: -288.6599 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 90.1726
+[2026-08-12 07:50:54][INFO] Step 26368 | train | value_loss: 675.3298 | policy_loss: 0.0205 | entropy: 0.2949 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:54][INFO] Step 264 | episode | episode_reward: -194.1111 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 90.5229
+[2026-08-12 07:50:54][INFO] Step 26496 | train | value_loss: 571.2910 | policy_loss: 0.0291 | entropy: 0.2450 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:54][INFO] Step 265 | episode | episode_reward: -209.7710 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 90.8624
+[2026-08-12 07:50:54][INFO] Step 266 | episode | episode_reward: -266.7810 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 91.1447
+[2026-08-12 07:50:54][INFO] Step 26624 | train | value_loss: 893.1178 | policy_loss: 0.0198 | entropy: 0.4269 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:55][INFO] Step 267 | episode | episode_reward: -255.5644 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 91.4949
+[2026-08-12 07:50:55][INFO] Step 26752 | train | value_loss: 618.7816 | policy_loss: 0.1704 | entropy: 0.2898 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:55][INFO] Step 268 | episode | episode_reward: -163.9109 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 91.8544
+[2026-08-12 07:50:55][INFO] Step 26880 | train | value_loss: 549.4684 | policy_loss: 0.0471 | entropy: 0.2472 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:55][INFO] Step 269 | episode | episode_reward: -227.7692 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 92.2030
+[2026-08-12 07:50:56][INFO] Step 270 | episode | episode_reward: -112.1629 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 92.4745
+[2026-08-12 07:50:56][INFO] Step 27008 | train | value_loss: 198.1145 | policy_loss: 0.0138 | entropy: 0.3080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:56][INFO] Step 271 | episode | episode_reward: -196.5956 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 92.8260
+[2026-08-12 07:50:56][INFO] Step 27136 | train | value_loss: 394.5154 | policy_loss: 0.0249 | entropy: 0.1740 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:56][INFO] Step 272 | episode | episode_reward: -217.7318 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 93.1776
+[2026-08-12 07:50:57][INFO] Step 27264 | train | value_loss: 661.5876 | policy_loss: 0.0492 | entropy: 0.1756 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:57][INFO] Step 273 | episode | episode_reward: -260.1773 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 93.5267
+[2026-08-12 07:50:57][INFO] Step 27392 | train | value_loss: 552.2810 | policy_loss: 0.0063 | entropy: 0.1518 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:57][INFO] Step 274 | episode | episode_reward: -197.9980 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 93.8726
+[2026-08-12 07:50:57][INFO] Step 275 | episode | episode_reward: -203.3771 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 94.1520
+[2026-08-12 07:50:57][INFO] Step 27520 | train | value_loss: 473.5731 | policy_loss: 0.0818 | entropy: 0.2443 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:58][INFO] Step 276 | episode | episode_reward: -119.0039 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 94.5065
+[2026-08-12 07:50:58][INFO] Step 27648 | train | value_loss: 505.7813 | policy_loss: 0.0376 | entropy: 0.1650 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:58][INFO] Step 277 | episode | episode_reward: -294.1500 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 94.8573
+[2026-08-12 07:50:58][INFO] Step 27776 | train | value_loss: 856.5882 | policy_loss: 0.0148 | entropy: 0.1617 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:58][INFO] Step 278 | episode | episode_reward: -255.2920 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 95.2056
+[2026-08-12 07:50:59][INFO] Step 279 | episode | episode_reward: -192.4780 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 95.4785
+[2026-08-12 07:50:59][INFO] Step 27904 | train | value_loss: 423.3125 | policy_loss: 0.0785 | entropy: 0.2640 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:59][INFO] Step 280 | episode | episode_reward: -193.3930 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 95.8297
+[2026-08-12 07:50:59][INFO] Step 28032 | train | value_loss: 365.8734 | policy_loss: 0.0360 | entropy: 0.1438 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:50:59][INFO] Step 281 | episode | episode_reward: -123.0389 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 96.1854
+[2026-08-12 07:51:00][INFO] Step 28160 | train | value_loss: 402.1289 | policy_loss: 0.0283 | entropy: 0.1654 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:00][INFO] Step 282 | episode | episode_reward: -229.5450 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 96.5374
+[2026-08-12 07:51:00][INFO] Step 28288 | train | value_loss: 1169.4200 | policy_loss: 0.0270 | entropy: 0.1756 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:00][INFO] Step 283 | episode | episode_reward: -304.5612 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 96.8853
+[2026-08-12 07:51:00][INFO] Step 284 | episode | episode_reward: -181.2059 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 97.1576
+[2026-08-12 07:51:00][INFO] Step 28416 | train | value_loss: 390.0779 | policy_loss: 0.0632 | entropy: 0.2224 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:01][INFO] Step 285 | episode | episode_reward: -252.5532 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 97.5058
+[2026-08-12 07:51:01][INFO] Step 28544 | train | value_loss: 581.6485 | policy_loss: 0.0229 | entropy: 0.2513 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:01][INFO] Step 286 | episode | episode_reward: -164.1873 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 97.8547
+[2026-08-12 07:51:01][INFO] Step 28672 | train | value_loss: 1739.2312 | policy_loss: 0.0412 | entropy: 0.1106 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:01][INFO] Step 287 | episode | episode_reward: -409.2426 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 98.2042
+[2026-08-12 07:51:02][INFO] Step 288 | episode | episode_reward: -209.8835 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 98.4772
+[2026-08-12 07:51:02][INFO] Step 28800 | train | value_loss: 597.1992 | policy_loss: 0.1092 | entropy: 0.1176 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:02][INFO] Step 289 | episode | episode_reward: -185.8425 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 98.8296
+[2026-08-12 07:51:02][INFO] Step 28928 | train | value_loss: 370.1920 | policy_loss: 0.0915 | entropy: 0.2815 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:02][INFO] Step 290 | episode | episode_reward: -165.2548 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 99.1809
+[2026-08-12 07:51:02][INFO] Step 29056 | train | value_loss: 227.2669 | policy_loss: 0.0107 | entropy: 0.1487 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:03][INFO] Step 291 | episode | episode_reward: -131.5615 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 99.5320
+[2026-08-12 07:51:03][INFO] Step 29184 | train | value_loss: 103.0679 | policy_loss: 0.0269 | entropy: 0.1196 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:03][INFO] Step 292 | episode | episode_reward: -77.1146 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 99.8918
+[2026-08-12 07:51:03][INFO] Step 293 | episode | episode_reward: -271.0279 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 100.1699
+[2026-08-12 07:51:03][INFO] Step 29312 | train | value_loss: 926.0458 | policy_loss: 0.0378 | entropy: 0.2241 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:04][INFO] Step 294 | episode | episode_reward: -140.1294 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 100.5254
+[2026-08-12 07:51:04][INFO] Step 29440 | train | value_loss: 323.6737 | policy_loss: 0.0628 | entropy: 0.1247 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:04][INFO] Step 295 | episode | episode_reward: -231.6993 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 100.8825
+[2026-08-12 07:51:04][INFO] Step 29568 | train | value_loss: 302.7182 | policy_loss: 0.0140 | entropy: 0.1325 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:04][INFO] Step 296 | episode | episode_reward: -121.6313 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 101.2474
+[2026-08-12 07:51:05][INFO] Step 29696 | train | value_loss: 441.1923 | policy_loss: 0.0353 | entropy: 0.1015 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:05][INFO] Step 297 | episode | episode_reward: -192.1951 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 101.5999
+[2026-08-12 07:51:05][INFO] Step 298 | episode | episode_reward: -144.6519 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 101.8912
+[2026-08-12 07:51:05][INFO] Step 29824 | train | value_loss: 291.6815 | policy_loss: 0.0130 | entropy: 0.1431 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:05][INFO] Step 299 | episode | episode_reward: -225.3285 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 102.2500
+[2026-08-12 07:51:06][INFO] Step 29952 | train | value_loss: 484.6284 | policy_loss: 0.0166 | entropy: 0.1266 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:06][INFO] Step 300 | episode | episode_reward: -182.8988 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 102.6070
+[2026-08-12 07:51:06][INFO] Step 30080 | train | value_loss: 614.1059 | policy_loss: 0.0265 | entropy: 0.1141 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:06][INFO] Step 301 | episode | episode_reward: -239.8741 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 102.9670
+[2026-08-12 07:51:06][INFO] Step 302 | episode | episode_reward: -175.6731 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 103.2431
+[2026-08-12 07:51:06][INFO] Step 30208 | train | value_loss: 365.6214 | policy_loss: 0.0438 | entropy: 0.1391 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:07][INFO] Step 303 | episode | episode_reward: -254.9761 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 103.5997
+[2026-08-12 07:51:07][INFO] Step 30336 | train | value_loss: 744.9225 | policy_loss: 0.0711 | entropy: 0.1255 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:07][INFO] Step 304 | episode | episode_reward: -247.9124 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 103.9610
+[2026-08-12 07:51:07][INFO] Step 30464 | train | value_loss: 683.5421 | policy_loss: 0.0272 | entropy: 0.1068 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:07][INFO] Step 305 | episode | episode_reward: -244.0657 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 104.3264
+[2026-08-12 07:51:08][INFO] Step 30592 | train | value_loss: 1682.9772 | policy_loss: 0.0433 | entropy: 0.1270 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:08][INFO] Step 306 | episode | episode_reward: -361.4924 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 104.6778
+[2026-08-12 07:51:08][INFO] Step 307 | episode | episode_reward: -240.2294 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 104.9537
+[2026-08-12 07:51:08][INFO] Step 30720 | train | value_loss: 647.2043 | policy_loss: 0.1950 | entropy: 0.1159 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:08][INFO] Step 308 | episode | episode_reward: -259.2310 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 105.3027
+[2026-08-12 07:51:09][INFO] Step 30848 | train | value_loss: 614.5779 | policy_loss: 0.0236 | entropy: 0.0986 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:09][INFO] Step 309 | episode | episode_reward: -106.4397 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 105.6524
+[2026-08-12 07:51:09][INFO] Step 30976 | train | value_loss: 254.4440 | policy_loss: 0.0187 | entropy: 0.1174 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:09][INFO] Step 310 | episode | episode_reward: -154.8901 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 106.0021
+[2026-08-12 07:51:09][INFO] Step 311 | episode | episode_reward: -151.7293 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 106.2744
+[2026-08-12 07:51:09][INFO] Step 31104 | train | value_loss: 319.6605 | policy_loss: 0.0235 | entropy: 0.1178 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:10][INFO] Step 312 | episode | episode_reward: -218.9575 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 106.6262
+[2026-08-12 07:51:10][INFO] Step 31232 | train | value_loss: 468.4319 | policy_loss: 0.0713 | entropy: 0.1282 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:10][INFO] Step 313 | episode | episode_reward: -171.1680 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 106.9765
+[2026-08-12 07:51:10][INFO] Step 31360 | train | value_loss: 244.2488 | policy_loss: -0.0029 | entropy: 0.0811 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:10][INFO] Step 314 | episode | episode_reward: -143.0043 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 107.3258
+[2026-08-12 07:51:11][INFO] Step 31488 | train | value_loss: 195.1337 | policy_loss: 0.0281 | entropy: 0.1031 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:11][INFO] Step 315 | episode | episode_reward: -145.2615 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 107.6761
+[2026-08-12 07:51:11][INFO] Step 316 | episode | episode_reward: -173.9211 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 107.9514
+[2026-08-12 07:51:11][INFO] Step 31616 | train | value_loss: 377.0311 | policy_loss: 0.0329 | entropy: 0.0954 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:11][INFO] Step 317 | episode | episode_reward: -92.9408 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 108.3020
+[2026-08-12 07:51:12][INFO] Step 31744 | train | value_loss: 209.0056 | policy_loss: 0.1075 | entropy: 0.1072 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:12][INFO] Step 318 | episode | episode_reward: -189.2657 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 108.6517
+[2026-08-12 07:51:12][INFO] Step 31872 | train | value_loss: 661.4007 | policy_loss: 0.0545 | entropy: 0.1308 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:12][INFO] Step 319 | episode | episode_reward: -256.7179 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 109.0050
+[2026-08-12 07:51:12][INFO] Step 320 | episode | episode_reward: -163.4487 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 109.2768
+[2026-08-12 07:51:12][INFO] Step 32000 | train | value_loss: 346.0941 | policy_loss: 0.0379 | entropy: 0.1011 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:13][INFO] Step 321 | episode | episode_reward: -193.2866 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 109.6247
+[2026-08-12 07:51:13][INFO] Step 32128 | train | value_loss: 375.8810 | policy_loss: 0.0057 | entropy: 0.0728 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:13][INFO] Step 322 | episode | episode_reward: -139.8447 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 109.9726
+[2026-08-12 07:51:13][INFO] Step 32256 | train | value_loss: 334.3296 | policy_loss: 0.0083 | entropy: 0.0740 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:13][INFO] Step 323 | episode | episode_reward: -204.0728 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 110.3263
+[2026-08-12 07:51:14][INFO] Step 32384 | train | value_loss: 241.9972 | policy_loss: 0.0404 | entropy: 0.0718 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:14][INFO] Step 324 | episode | episode_reward: -140.7506 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 110.6769
+[2026-08-12 07:51:14][INFO] Step 325 | episode | episode_reward: -171.4404 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 110.9496
+[2026-08-12 07:51:14][INFO] Step 32512 | train | value_loss: 406.8049 | policy_loss: 0.0173 | entropy: 0.1333 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:14][INFO] Step 326 | episode | episode_reward: -141.7653 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 111.2999
+[2026-08-12 07:51:15][INFO] Step 32640 | train | value_loss: 211.6267 | policy_loss: 0.0445 | entropy: 0.0693 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:15][INFO] Step 327 | episode | episode_reward: -143.6184 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 111.6485
+[2026-08-12 07:51:15][INFO] Step 32768 | train | value_loss: 172.1706 | policy_loss: 0.0024 | entropy: 0.0771 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:15][INFO] Step 328 | episode | episode_reward: -106.4532 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 111.9992
+[2026-08-12 07:51:15][INFO] Step 32896 | train | value_loss: 358.6568 | policy_loss: 0.0226 | entropy: 0.0625 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:15][INFO] Step 329 | episode | episode_reward: -172.7511 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 112.3430
+[2026-08-12 07:51:16][INFO] Step 330 | episode | episode_reward: -174.9501 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 112.6299
+[2026-08-12 07:51:16][INFO] Step 33024 | train | value_loss: 350.1393 | policy_loss: 0.0266 | entropy: 0.1270 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:16][INFO] Step 331 | episode | episode_reward: -131.8330 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 112.9836
+[2026-08-12 07:51:16][INFO] Step 33152 | train | value_loss: 251.3563 | policy_loss: 0.0121 | entropy: 0.0733 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:16][INFO] Step 332 | episode | episode_reward: -180.8352 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 113.3354
+[2026-08-12 07:51:17][INFO] Step 33280 | train | value_loss: 360.3412 | policy_loss: 0.0280 | entropy: 0.0763 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:17][INFO] Step 333 | episode | episode_reward: -186.9691 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 113.6869
+[2026-08-12 07:51:17][INFO] Step 334 | episode | episode_reward: -268.9370 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 113.9597
+[2026-08-12 07:51:17][INFO] Step 33408 | train | value_loss: 854.7784 | policy_loss: 0.0382 | entropy: 0.1269 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:17][INFO] Step 335 | episode | episode_reward: -145.3303 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 114.3114
+[2026-08-12 07:51:18][INFO] Step 33536 | train | value_loss: 275.6942 | policy_loss: 0.0186 | entropy: 0.0636 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:18][INFO] Step 336 | episode | episode_reward: -202.4647 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 114.6615
+[2026-08-12 07:51:18][INFO] Step 33664 | train | value_loss: 320.0615 | policy_loss: 0.0445 | entropy: 0.0674 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:18][INFO] Step 337 | episode | episode_reward: -163.6823 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 115.0108
+[2026-08-12 07:51:18][INFO] Step 33792 | train | value_loss: 736.9420 | policy_loss: 0.0039 | entropy: 0.0938 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:18][INFO] Step 338 | episode | episode_reward: -247.3611 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 115.3579
+[2026-08-12 07:51:19][INFO] Step 339 | episode | episode_reward: -139.0942 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 115.6353
+[2026-08-12 07:51:19][INFO] Step 33920 | train | value_loss: 281.2026 | policy_loss: 0.0358 | entropy: 0.0829 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:19][INFO] Step 340 | episode | episode_reward: -184.5426 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 115.9859
+[2026-08-12 07:51:19][INFO] Step 34048 | train | value_loss: 390.8360 | policy_loss: 0.0186 | entropy: 0.0838 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:19][INFO] Step 341 | episode | episode_reward: -199.6391 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 116.3367
+[2026-08-12 07:51:20][INFO] Step 34176 | train | value_loss: 589.3714 | policy_loss: 0.0458 | entropy: 0.0949 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:20][INFO] Step 342 | episode | episode_reward: -243.8470 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 116.6858
+[2026-08-12 07:51:20][INFO] Step 343 | episode | episode_reward: -188.2152 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 116.9639
+[2026-08-12 07:51:20][INFO] Step 34304 | train | value_loss: 426.8252 | policy_loss: 0.0133 | entropy: 0.2033 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:20][INFO] Step 344 | episode | episode_reward: -190.6629 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 117.3203
+[2026-08-12 07:51:21][INFO] Step 34432 | train | value_loss: 353.2701 | policy_loss: 0.0082 | entropy: 0.1025 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:21][INFO] Step 345 | episode | episode_reward: -153.1139 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 117.6902
+[2026-08-12 07:51:21][INFO] Step 34560 | train | value_loss: 293.5294 | policy_loss: 0.0091 | entropy: 0.1076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:21][INFO] Step 346 | episode | episode_reward: -182.9197 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 118.0476
+[2026-08-12 07:51:21][INFO] Step 34688 | train | value_loss: 376.5723 | policy_loss: 0.0366 | entropy: 0.0845 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:22][INFO] Step 347 | episode | episode_reward: -180.0634 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 118.4026
+[2026-08-12 07:51:22][INFO] Step 348 | episode | episode_reward: -222.3449 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 118.6821
+[2026-08-12 07:51:22][INFO] Step 34816 | train | value_loss: 592.3616 | policy_loss: 0.0652 | entropy: 0.1021 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:22][INFO] Step 349 | episode | episode_reward: -185.6139 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 119.0387
+[2026-08-12 07:51:22][INFO] Step 34944 | train | value_loss: 314.3371 | policy_loss: 0.0136 | entropy: 0.0845 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:22][INFO] Step 350 | episode | episode_reward: -146.7629 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 119.3979
+[2026-08-12 07:51:23][INFO] Step 35072 | train | value_loss: 257.6788 | policy_loss: 0.0396 | entropy: 0.1284 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:23][INFO] Step 351 | episode | episode_reward: -166.8241 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 119.7574
+[2026-08-12 07:51:23][INFO] Step 352 | episode | episode_reward: -124.1633 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 120.0350
+[2026-08-12 07:51:23][INFO] Step 35200 | train | value_loss: 292.1990 | policy_loss: 0.0136 | entropy: 0.0887 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:23][INFO] Step 353 | episode | episode_reward: -194.0396 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 120.3967
+[2026-08-12 07:51:24][INFO] Step 35328 | train | value_loss: 450.4057 | policy_loss: 0.0067 | entropy: 0.1197 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:24][INFO] Step 354 | episode | episode_reward: -242.7124 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 120.7552
+[2026-08-12 07:51:24][INFO] Step 35456 | train | value_loss: 499.6054 | policy_loss: 0.0036 | entropy: 0.1081 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:24][INFO] Step 355 | episode | episode_reward: -182.1658 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 121.1134
+[2026-08-12 07:51:25][INFO] Step 35584 | train | value_loss: 195.8379 | policy_loss: 0.0190 | entropy: 0.0870 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:25][INFO] Step 356 | episode | episode_reward: -123.0366 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 121.4708
+[2026-08-12 07:51:25][INFO] Step 357 | episode | episode_reward: -179.6094 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 121.7427
+[2026-08-12 07:51:25][INFO] Step 35712 | train | value_loss: 423.2653 | policy_loss: 0.0277 | entropy: 0.1055 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:25][INFO] Step 358 | episode | episode_reward: -169.1897 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 122.1135
+[2026-08-12 07:51:25][INFO] Step 35840 | train | value_loss: 363.8757 | policy_loss: 0.0550 | entropy: 0.1134 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:26][INFO] Step 359 | episode | episode_reward: -232.9464 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 122.4822
+[2026-08-12 07:51:26][INFO] Step 35968 | train | value_loss: 446.8489 | policy_loss: 0.0041 | entropy: 0.1167 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:26][INFO] Step 360 | episode | episode_reward: -193.9194 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 122.8401
+[2026-08-12 07:51:26][INFO] Step 36096 | train | value_loss: 651.3320 | policy_loss: 0.0215 | entropy: 0.1111 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:26][INFO] Step 361 | episode | episode_reward: -232.5279 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 123.1898
+[2026-08-12 07:51:27][INFO] Step 362 | episode | episode_reward: -177.1264 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 123.4777
+[2026-08-12 07:51:27][INFO] Step 36224 | train | value_loss: 397.2776 | policy_loss: 0.0209 | entropy: 0.1125 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:27][INFO] Step 363 | episode | episode_reward: -229.8731 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 123.8351
+[2026-08-12 07:51:27][INFO] Step 36352 | train | value_loss: 704.8943 | policy_loss: -0.0138 | entropy: 0.1315 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:27][INFO] Step 364 | episode | episode_reward: -252.6470 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 124.1963
+[2026-08-12 07:51:28][INFO] Step 36480 | train | value_loss: 425.2343 | policy_loss: 0.0115 | entropy: 0.1306 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:28][INFO] Step 365 | episode | episode_reward: -176.9272 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 124.5633
+[2026-08-12 07:51:28][INFO] Step 366 | episode | episode_reward: -215.2833 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 124.8385
+[2026-08-12 07:51:28][INFO] Step 36608 | train | value_loss: 525.4819 | policy_loss: 0.0211 | entropy: 0.1406 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:28][INFO] Step 367 | episode | episode_reward: -253.5446 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 125.1980
+[2026-08-12 07:51:28][INFO] Step 36736 | train | value_loss: 654.8142 | policy_loss: 0.0484 | entropy: 0.0894 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:29][INFO] Step 368 | episode | episode_reward: -243.3134 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 125.5539
+[2026-08-12 07:51:29][INFO] Step 36864 | train | value_loss: 388.8731 | policy_loss: 0.0115 | entropy: 0.0870 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:29][INFO] Step 369 | episode | episode_reward: -153.1806 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 125.9201
+[2026-08-12 07:51:29][INFO] Step 36992 | train | value_loss: 484.3277 | policy_loss: 0.0239 | entropy: 0.0927 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:29][INFO] Step 370 | episode | episode_reward: -208.1122 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 126.2730
+[2026-08-12 07:51:30][INFO] Step 371 | episode | episode_reward: -252.8862 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 126.5562
+[2026-08-12 07:51:30][INFO] Step 37120 | train | value_loss: 758.3200 | policy_loss: 0.0103 | entropy: 0.1294 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:30][INFO] Step 372 | episode | episode_reward: -214.0701 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 126.9212
+[2026-08-12 07:51:30][INFO] Step 37248 | train | value_loss: 471.9401 | policy_loss: 0.0324 | entropy: 0.1030 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:30][INFO] Step 373 | episode | episode_reward: -214.6067 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 127.2748
+[2026-08-12 07:51:31][INFO] Step 37376 | train | value_loss: 568.3730 | policy_loss: 0.0115 | entropy: 0.0802 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:31][INFO] Step 374 | episode | episode_reward: -234.9169 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 127.6368
+[2026-08-12 07:51:31][INFO] Step 375 | episode | episode_reward: -129.5751 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 127.9170
+[2026-08-12 07:51:31][INFO] Step 37504 | train | value_loss: 308.5341 | policy_loss: 0.0303 | entropy: 0.0912 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:31][INFO] Step 376 | episode | episode_reward: -217.3432 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 128.2731
+[2026-08-12 07:51:32][INFO] Step 37632 | train | value_loss: 464.3501 | policy_loss: 0.0552 | entropy: 0.0943 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:32][INFO] Step 377 | episode | episode_reward: -158.8272 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 128.6342
+[2026-08-12 07:51:32][INFO] Step 37760 | train | value_loss: 235.5187 | policy_loss: 0.0492 | entropy: 0.1441 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:32][INFO] Step 378 | episode | episode_reward: -122.0856 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 128.9996
+[2026-08-12 07:51:32][INFO] Step 37888 | train | value_loss: 882.7384 | policy_loss: 0.0016 | entropy: 0.1212 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:32][INFO] Step 379 | episode | episode_reward: -278.1910 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 129.3554
+[2026-08-12 07:51:33][INFO] Step 380 | episode | episode_reward: -414.3321 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 129.6354
+[2026-08-12 07:51:33][INFO] Step 38016 | train | value_loss: 2269.1876 | policy_loss: 0.0595 | entropy: 0.2020 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:33][INFO] Step 381 | episode | episode_reward: -192.8144 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 129.9923
+[2026-08-12 07:51:33][INFO] Step 38144 | train | value_loss: 394.0909 | policy_loss: 0.0172 | entropy: 0.0808 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:33][INFO] Step 382 | episode | episode_reward: -194.9925 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 130.3530
+[2026-08-12 07:51:34][INFO] Step 38272 | train | value_loss: 728.5413 | policy_loss: 0.0149 | entropy: 0.1640 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:34][INFO] Step 383 | episode | episode_reward: -272.0840 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 130.7206
+[2026-08-12 07:51:34][INFO] Step 384 | episode | episode_reward: -136.8584 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 131.0000
+[2026-08-12 07:51:34][INFO] Step 38400 | train | value_loss: 340.1219 | policy_loss: 0.0093 | entropy: 0.1306 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:34][INFO] Step 385 | episode | episode_reward: -179.5197 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 131.3567
+[2026-08-12 07:51:35][INFO] Step 38528 | train | value_loss: 379.2458 | policy_loss: -0.0044 | entropy: 0.0930 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:35][INFO] Step 386 | episode | episode_reward: -302.3693 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 131.6895
+[2026-08-12 07:51:35][INFO] Step 38656 | train | value_loss: 835.3809 | policy_loss: 0.0075 | entropy: 0.1980 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:35][INFO] Step 387 | episode | episode_reward: -211.3595 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 132.0091
+[2026-08-12 07:51:35][INFO] Step 38784 | train | value_loss: 343.4260 | policy_loss: 0.0491 | entropy: 0.1002 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:35][INFO] Step 388 | episode | episode_reward: -172.7920 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 132.3340
+[2026-08-12 07:51:36][INFO] Step 389 | episode | episode_reward: -320.7613 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 132.6137
+[2026-08-12 07:51:36][INFO] Step 38912 | train | value_loss: 1232.9586 | policy_loss: 0.0123 | entropy: 0.0771 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:36][INFO] Step 390 | episode | episode_reward: -138.2493 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 132.9688
+[2026-08-12 07:51:36][INFO] Step 39040 | train | value_loss: 224.5981 | policy_loss: 0.0080 | entropy: 0.1309 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:36][INFO] Step 391 | episode | episode_reward: -123.5012 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 133.3252
+[2026-08-12 07:51:37][INFO] Step 39168 | train | value_loss: 1009.3767 | policy_loss: 0.0046 | entropy: 0.0578 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:37][INFO] Step 392 | episode | episode_reward: -342.9583 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 133.6861
+[2026-08-12 07:51:37][INFO] Step 39296 | train | value_loss: 334.4223 | policy_loss: 0.0015 | entropy: 0.0298 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:37][INFO] Step 393 | episode | episode_reward: -158.7381 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 134.0338
+[2026-08-12 07:51:37][INFO] Step 394 | episode | episode_reward: -266.8619 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 134.3197
+[2026-08-12 07:51:38][INFO] Step 39424 | train | value_loss: 821.7790 | policy_loss: 0.0055 | entropy: 0.1120 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:38][INFO] Step 395 | episode | episode_reward: -142.3482 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 134.6461
+[2026-08-12 07:51:38][INFO] Step 39552 | train | value_loss: 651.5761 | policy_loss: 0.0255 | entropy: 0.0993 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:38][INFO] Step 396 | episode | episode_reward: -320.6070 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 134.9664
+[2026-08-12 07:51:38][INFO] Step 39680 | train | value_loss: 436.8691 | policy_loss: -0.0002 | entropy: 0.0223 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:38][INFO] Step 397 | episode | episode_reward: -148.7299 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 135.2925
+[2026-08-12 07:51:39][INFO] Step 398 | episode | episode_reward: -204.1927 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 135.5717
+[2026-08-12 07:51:39][INFO] Step 39808 | train | value_loss: 559.7935 | policy_loss: -0.0021 | entropy: 0.0793 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:39][INFO] Step 399 | episode | episode_reward: -225.0892 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 135.9278
+[2026-08-12 07:51:39][INFO] Step 39936 | train | value_loss: 498.2415 | policy_loss: -0.0009 | entropy: 0.0294 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:39][INFO] Step 400 | episode | episode_reward: -180.0323 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 136.2828
+[2026-08-12 07:51:40][INFO] Step 40064 | train | value_loss: 453.6877 | policy_loss: 0.0404 | entropy: 0.0853 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:40][INFO] Step 401 | episode | episode_reward: -224.1116 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 136.6352
+[2026-08-12 07:51:40][INFO] Step 40192 | train | value_loss: 1264.0967 | policy_loss: 0.0087 | entropy: 0.0505 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:40][INFO] Step 402 | episode | episode_reward: -318.1931 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 136.9956
+[2026-08-12 07:51:40][INFO] Step 403 | episode | episode_reward: -299.9063 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 137.2769
+[2026-08-12 07:51:41][INFO] Step 40320 | train | value_loss: 1041.6518 | policy_loss: 0.1780 | entropy: 0.1410 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:41][INFO] Step 404 | episode | episode_reward: -143.5068 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 137.6397
+[2026-08-12 07:51:41][INFO] Step 40448 | train | value_loss: 432.1077 | policy_loss: -0.0082 | entropy: 0.0515 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:41][INFO] Step 405 | episode | episode_reward: -259.9863 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 137.9927
+[2026-08-12 07:51:41][INFO] Step 40576 | train | value_loss: 313.5745 | policy_loss: 0.1550 | entropy: 0.0258 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:41][INFO] Step 406 | episode | episode_reward: -129.7937 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 138.3565
+[2026-08-12 07:51:42][INFO] Step 407 | episode | episode_reward: -175.4541 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 138.6295
+[2026-08-12 07:51:42][INFO] Step 40704 | train | value_loss: 470.5157 | policy_loss: 0.0011 | entropy: 0.0169 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:42][INFO] Step 408 | episode | episode_reward: -247.2528 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 139.0192
+[2026-08-12 07:51:42][INFO] Step 40832 | train | value_loss: 615.1877 | policy_loss: 0.0006 | entropy: 0.0345 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:42][INFO] Step 409 | episode | episode_reward: -201.7377 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 139.3793
+[2026-08-12 07:51:43][INFO] Step 40960 | train | value_loss: 375.1750 | policy_loss: -0.0014 | entropy: 0.0374 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:43][INFO] Step 410 | episode | episode_reward: -180.5517 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 139.7336
+[2026-08-12 07:51:43][INFO] Step 41088 | train | value_loss: 802.6932 | policy_loss: 0.0781 | entropy: 0.0293 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:43][INFO] Step 411 | episode | episode_reward: -264.9511 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 140.0923
+[2026-08-12 07:51:43][INFO] Step 412 | episode | episode_reward: -185.9219 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 140.3742
+[2026-08-12 07:51:44][INFO] Step 41216 | train | value_loss: 451.5117 | policy_loss: -0.0009 | entropy: 0.0183 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:44][INFO] Step 413 | episode | episode_reward: -130.3155 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 140.7312
+[2026-08-12 07:51:44][INFO] Step 41344 | train | value_loss: 373.4266 | policy_loss: 0.0006 | entropy: 0.0085 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:44][INFO] Step 414 | episode | episode_reward: -242.0613 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 141.0999
+[2026-08-12 07:51:44][INFO] Step 41472 | train | value_loss: 434.2617 | policy_loss: -0.0039 | entropy: 0.0291 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:45][INFO] Step 415 | episode | episode_reward: -190.5389 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 141.4609
+[2026-08-12 07:51:45][INFO] Step 416 | episode | episode_reward: -249.2633 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 141.7395
+[2026-08-12 07:51:45][INFO] Step 41600 | train | value_loss: 776.3533 | policy_loss: -0.0011 | entropy: 0.0131 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:45][INFO] Step 417 | episode | episode_reward: -234.9465 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 142.0967
+[2026-08-12 07:51:45][INFO] Step 41728 | train | value_loss: 557.6600 | policy_loss: -0.0014 | entropy: 0.0272 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:46][INFO] Step 418 | episode | episode_reward: -174.4760 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 142.4554
+[2026-08-12 07:51:46][INFO] Step 41856 | train | value_loss: 616.9633 | policy_loss: -0.0022 | entropy: 0.0207 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:46][INFO] Step 419 | episode | episode_reward: -286.5225 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 142.8047
+[2026-08-12 07:51:46][INFO] Step 41984 | train | value_loss: 781.4569 | policy_loss: -0.0015 | entropy: 0.0138 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:46][INFO] Step 420 | episode | episode_reward: -261.5925 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 143.1619
+[2026-08-12 07:51:47][INFO] Step 421 | episode | episode_reward: -144.2337 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 143.4404
+[2026-08-12 07:51:47][INFO] Step 42112 | train | value_loss: 373.1264 | policy_loss: -0.0064 | entropy: 0.0463 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:47][INFO] Step 422 | episode | episode_reward: -115.3623 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 143.7968
+[2026-08-12 07:51:47][INFO] Step 42240 | train | value_loss: 552.0782 | policy_loss: -0.0116 | entropy: 0.0451 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:47][INFO] Step 423 | episode | episode_reward: -345.7204 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 144.1503
+[2026-08-12 07:51:48][INFO] Step 42368 | train | value_loss: 644.6899 | policy_loss: -0.0001 | entropy: 0.0307 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:48][INFO] Step 424 | episode | episode_reward: -164.5638 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 144.5037
+[2026-08-12 07:51:48][INFO] Step 42496 | train | value_loss: 351.0238 | policy_loss: 0.0050 | entropy: 0.0281 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:48][INFO] Step 425 | episode | episode_reward: -168.0113 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 144.8537
+[2026-08-12 07:51:48][INFO] Step 426 | episode | episode_reward: -193.8444 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 145.1433
+[2026-08-12 07:51:48][INFO] Step 42624 | train | value_loss: 532.8419 | policy_loss: 0.0075 | entropy: 0.0158 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:49][INFO] Step 427 | episode | episode_reward: -293.1774 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 145.5062
+[2026-08-12 07:51:49][INFO] Step 42752 | train | value_loss: 1367.8097 | policy_loss: 0.0025 | entropy: 0.0452 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:49][INFO] Step 428 | episode | episode_reward: -401.8736 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 145.8656
+[2026-08-12 07:51:49][INFO] Step 42880 | train | value_loss: 795.2622 | policy_loss: -0.0003 | entropy: 0.0124 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:49][INFO] Step 429 | episode | episode_reward: -204.3786 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 146.2272
+[2026-08-12 07:51:50][INFO] Step 430 | episode | episode_reward: -243.9029 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 146.5025
+[2026-08-12 07:51:50][INFO] Step 43008 | train | value_loss: 717.9113 | policy_loss: -0.0037 | entropy: 0.0465 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:50][INFO] Step 431 | episode | episode_reward: -294.7005 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 146.8499
+[2026-08-12 07:51:50][INFO] Step 43136 | train | value_loss: 827.2179 | policy_loss: 0.0004 | entropy: 0.0226 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:50][INFO] Step 432 | episode | episode_reward: -177.6389 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 147.2070
+[2026-08-12 07:51:51][INFO] Step 43264 | train | value_loss: 487.0760 | policy_loss: -0.0056 | entropy: 0.0425 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:51][INFO] Step 433 | episode | episode_reward: -233.2991 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 147.5637
+[2026-08-12 07:51:51][INFO] Step 43392 | train | value_loss: 221.8927 | policy_loss: 0.0014 | entropy: 0.0222 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:51][INFO] Step 434 | episode | episode_reward: -125.0271 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 147.9190
+[2026-08-12 07:51:51][INFO] Step 435 | episode | episode_reward: -163.1803 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 148.2016
+[2026-08-12 07:51:51][INFO] Step 43520 | train | value_loss: 476.4943 | policy_loss: -0.0019 | entropy: 0.0145 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:52][INFO] Step 436 | episode | episode_reward: -265.1743 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 148.5631
+[2026-08-12 07:51:52][INFO] Step 43648 | train | value_loss: 622.6182 | policy_loss: -0.0009 | entropy: 0.0364 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:52][INFO] Step 437 | episode | episode_reward: -206.7774 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 148.8990
+[2026-08-12 07:51:52][INFO] Step 43776 | train | value_loss: 247.1280 | policy_loss: -0.0008 | entropy: 0.0421 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:52][INFO] Step 438 | episode | episode_reward: -116.3160 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 149.2652
+[2026-08-12 07:51:53][INFO] Step 439 | episode | episode_reward: -386.4323 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 149.5381
+[2026-08-12 07:51:53][INFO] Step 43904 | train | value_loss: 1877.6857 | policy_loss: -0.0009 | entropy: 0.0515 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:53][INFO] Step 440 | episode | episode_reward: -252.0454 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 149.9072
+[2026-08-12 07:51:53][INFO] Step 44032 | train | value_loss: 953.3658 | policy_loss: -0.0051 | entropy: 0.0238 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:53][INFO] Step 441 | episode | episode_reward: -441.5057 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 150.2242
+[2026-08-12 07:51:54][INFO] Step 44160 | train | value_loss: 1620.1374 | policy_loss: 0.0010 | entropy: 0.0401 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:54][INFO] Step 442 | episode | episode_reward: -265.0083 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 150.5848
+[2026-08-12 07:51:54][INFO] Step 44288 | train | value_loss: 1079.3696 | policy_loss: -0.0011 | entropy: 0.0351 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:54][INFO] Step 443 | episode | episode_reward: -306.8665 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 150.9079
+[2026-08-12 07:51:54][INFO] Step 444 | episode | episode_reward: -147.2209 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 151.1887
+[2026-08-12 07:51:54][INFO] Step 44416 | train | value_loss: 405.2535 | policy_loss: 0.0051 | entropy: 0.0278 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:55][INFO] Step 445 | episode | episode_reward: -233.1117 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 151.5555
+[2026-08-12 07:51:55][INFO] Step 44544 | train | value_loss: 530.8189 | policy_loss: -0.0022 | entropy: 0.0201 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:55][INFO] Step 446 | episode | episode_reward: -213.5267 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 151.9580
+[2026-08-12 07:51:55][INFO] Step 44672 | train | value_loss: 807.1312 | policy_loss: -0.0006 | entropy: 0.0090 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:55][INFO] Step 447 | episode | episode_reward: -292.0472 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 152.3542
+[2026-08-12 07:51:56][INFO] Step 448 | episode | episode_reward: -256.0900 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 152.6825
+[2026-08-12 07:51:56][INFO] Step 44800 | train | value_loss: 777.6717 | policy_loss: -0.0041 | entropy: 0.0251 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:56][INFO] Step 449 | episode | episode_reward: -194.9457 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 153.1250
+[2026-08-12 07:51:56][INFO] Step 44928 | train | value_loss: 432.6071 | policy_loss: -0.0024 | entropy: 0.0299 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:57][INFO] Step 450 | episode | episode_reward: -226.8965 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 153.5735
+[2026-08-12 07:51:57][INFO] Step 45056 | train | value_loss: 402.5767 | policy_loss: -0.0009 | entropy: 0.0197 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:57][INFO] Step 451 | episode | episode_reward: -161.5971 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 154.0072
+[2026-08-12 07:51:57][INFO] Step 45184 | train | value_loss: 381.5932 | policy_loss: -0.0032 | entropy: 0.0252 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:58][INFO] Step 452 | episode | episode_reward: -181.4124 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 154.4202
+[2026-08-12 07:51:58][INFO] Step 453 | episode | episode_reward: -289.3258 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 154.7909
+[2026-08-12 07:51:58][INFO] Step 45312 | train | value_loss: 998.5421 | policy_loss: -0.0013 | entropy: 0.0149 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:58][INFO] Step 454 | episode | episode_reward: -211.5553 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 155.2382
+[2026-08-12 07:51:59][INFO] Step 45440 | train | value_loss: 641.1375 | policy_loss: 0.0086 | entropy: 0.0082 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:59][INFO] Step 455 | episode | episode_reward: -315.1158 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 155.6855
+[2026-08-12 07:51:59][INFO] Step 45568 | train | value_loss: 553.2296 | policy_loss: -0.0003 | entropy: 0.0163 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:51:59][INFO] Step 456 | episode | episode_reward: -160.4979 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 156.1640
+[2026-08-12 07:52:00][INFO] Step 45696 | train | value_loss: 194.3933 | policy_loss: -0.0014 | entropy: 0.0137 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:00][INFO] Step 457 | episode | episode_reward: -78.5835 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 156.6058
+[2026-08-12 07:52:00][INFO] Step 458 | episode | episode_reward: -183.9194 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 156.9689
+[2026-08-12 07:52:00][INFO] Step 45824 | train | value_loss: 517.0202 | policy_loss: 0.0113 | entropy: 0.0811 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:01][INFO] Step 459 | episode | episode_reward: -272.7100 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 157.4244
+[2026-08-12 07:52:01][INFO] Step 45952 | train | value_loss: 830.5120 | policy_loss: -0.0019 | entropy: 0.0201 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:01][INFO] Step 460 | episode | episode_reward: -283.6418 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 157.8662
+[2026-08-12 07:52:01][INFO] Step 46080 | train | value_loss: 722.1853 | policy_loss: 0.0005 | entropy: 0.0118 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:01][INFO] Step 461 | episode | episode_reward: -256.3267 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 158.3101
+[2026-08-12 07:52:02][INFO] Step 462 | episode | episode_reward: -431.6914 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 158.6704
+[2026-08-12 07:52:02][INFO] Step 46208 | train | value_loss: 2334.3623 | policy_loss: 0.0259 | entropy: 0.0465 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:02][INFO] Step 463 | episode | episode_reward: -228.5967 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 159.1169
+[2026-08-12 07:52:02][INFO] Step 46336 | train | value_loss: 637.4022 | policy_loss: -0.0041 | entropy: 0.0260 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:03][INFO] Step 464 | episode | episode_reward: -298.8838 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 159.5708
+[2026-08-12 07:52:03][INFO] Step 46464 | train | value_loss: 620.9381 | policy_loss: -0.0006 | entropy: 0.0144 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:03][INFO] Step 465 | episode | episode_reward: -197.5387 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 160.0206
+[2026-08-12 07:52:04][INFO] Step 46592 | train | value_loss: 297.7730 | policy_loss: 0.0008 | entropy: 0.0213 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:04][INFO] Step 466 | episode | episode_reward: -152.1367 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 160.4598
+[2026-08-12 07:52:04][INFO] Step 467 | episode | episode_reward: -234.5606 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 160.8276
+[2026-08-12 07:52:04][INFO] Step 46720 | train | value_loss: 704.6071 | policy_loss: -0.0009 | entropy: 0.0668 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:04][INFO] Step 468 | episode | episode_reward: -206.4587 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 161.2699
+[2026-08-12 07:52:05][INFO] Step 46848 | train | value_loss: 390.0327 | policy_loss: -0.0018 | entropy: 0.0266 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:05][INFO] Step 469 | episode | episode_reward: -168.8205 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 161.6978
+[2026-08-12 07:52:05][INFO] Step 46976 | train | value_loss: 243.9156 | policy_loss: -0.0018 | entropy: 0.0198 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:05][INFO] Step 470 | episode | episode_reward: -115.3877 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 162.1487
+[2026-08-12 07:52:06][INFO] Step 471 | episode | episode_reward: -202.2319 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 162.5173
+[2026-08-12 07:52:06][INFO] Step 47104 | train | value_loss: 640.0712 | policy_loss: -0.0031 | entropy: 0.0224 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:06][INFO] Step 472 | episode | episode_reward: -130.7796 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 162.9638
+[2026-08-12 07:52:06][INFO] Step 47232 | train | value_loss: 341.2752 | policy_loss: -0.0033 | entropy: 0.0208 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:07][INFO] Step 473 | episode | episode_reward: -236.2675 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 163.4143
+[2026-08-12 07:52:07][INFO] Step 47360 | train | value_loss: 771.5088 | policy_loss: -0.0012 | entropy: 0.0225 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:07][INFO] Step 474 | episode | episode_reward: -294.5935 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 163.8581
+[2026-08-12 07:52:07][INFO] Step 47488 | train | value_loss: 534.7528 | policy_loss: -0.0014 | entropy: 0.0289 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:07][INFO] Step 475 | episode | episode_reward: -210.8126 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 164.3056
+[2026-08-12 07:52:08][INFO] Step 476 | episode | episode_reward: -155.5210 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 164.6722
+[2026-08-12 07:52:08][INFO] Step 47616 | train | value_loss: 478.2208 | policy_loss: 0.0007 | entropy: 0.0352 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:08][INFO] Step 477 | episode | episode_reward: -201.3378 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 165.1147
+[2026-08-12 07:52:08][INFO] Step 47744 | train | value_loss: 391.0573 | policy_loss: -0.0027 | entropy: 0.0337 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:09][INFO] Step 478 | episode | episode_reward: -170.8136 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 165.5646
+[2026-08-12 07:52:09][INFO] Step 47872 | train | value_loss: 502.2248 | policy_loss: -0.0010 | entropy: 0.0207 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:09][INFO] Step 479 | episode | episode_reward: -227.0188 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 166.0027
+[2026-08-12 07:52:09][INFO] Step 480 | episode | episode_reward: -145.1765 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 166.3762
+[2026-08-12 07:52:10][INFO] Step 48000 | train | value_loss: 460.8037 | policy_loss: -0.0005 | entropy: 0.0085 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:10][INFO] Step 481 | episode | episode_reward: -204.0477 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 166.8186
+[2026-08-12 07:52:10][INFO] Step 48128 | train | value_loss: 438.9252 | policy_loss: -0.0016 | entropy: 0.0544 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:10][INFO] Step 482 | episode | episode_reward: -187.4059 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 167.2649
+[2026-08-12 07:52:11][INFO] Step 48256 | train | value_loss: 362.0033 | policy_loss: -0.0012 | entropy: 0.0134 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:11][INFO] Step 483 | episode | episode_reward: -172.1888 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 167.7057
+[2026-08-12 07:52:11][INFO] Step 48384 | train | value_loss: 354.3509 | policy_loss: 0.0013 | entropy: 0.0186 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:11][INFO] Step 484 | episode | episode_reward: -168.7224 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 168.1514
+[2026-08-12 07:52:12][INFO] Step 485 | episode | episode_reward: -194.4636 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 168.5157
+[2026-08-12 07:52:12][INFO] Step 48512 | train | value_loss: 584.7600 | policy_loss: -0.0021 | entropy: 0.0531 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:12][INFO] Step 486 | episode | episode_reward: -302.6117 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 168.9605
+[2026-08-12 07:52:12][INFO] Step 48640 | train | value_loss: 863.6445 | policy_loss: 0.0001 | entropy: 0.0062 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:13][INFO] Step 487 | episode | episode_reward: -145.8352 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 169.4099
+[2026-08-12 07:52:13][INFO] Step 48768 | train | value_loss: 653.1186 | policy_loss: -0.0033 | entropy: 0.0212 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:13][INFO] Step 488 | episode | episode_reward: -269.2911 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 169.8601
+[2026-08-12 07:52:13][INFO] Step 48896 | train | value_loss: 1443.7093 | policy_loss: -0.0033 | entropy: 0.0271 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:13][INFO] Step 489 | episode | episode_reward: -342.6770 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 170.3052
+[2026-08-12 07:52:14][INFO] Step 490 | episode | episode_reward: -303.0866 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 170.6771
+[2026-08-12 07:52:14][INFO] Step 49024 | train | value_loss: 1025.9199 | policy_loss: -0.0050 | entropy: 0.0334 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:14][INFO] Step 491 | episode | episode_reward: -206.8118 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 171.1267
+[2026-08-12 07:52:14][INFO] Step 49152 | train | value_loss: 447.1886 | policy_loss: -0.0024 | entropy: 0.0195 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:15][INFO] Step 492 | episode | episode_reward: -203.5480 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 171.5754
+[2026-08-12 07:52:15][INFO] Step 49280 | train | value_loss: 269.2080 | policy_loss: -0.0024 | entropy: 0.0225 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:15][INFO] Step 493 | episode | episode_reward: -127.6117 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 172.0221
+[2026-08-12 07:52:15][INFO] Step 494 | episode | episode_reward: -199.9721 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 172.3949
+[2026-08-12 07:52:16][INFO] Step 49408 | train | value_loss: 646.7187 | policy_loss: -0.0009 | entropy: 0.0153 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:16][INFO] Step 495 | episode | episode_reward: -249.2063 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 172.8411
+[2026-08-12 07:52:16][INFO] Step 49536 | train | value_loss: 652.0172 | policy_loss: -0.0001 | entropy: 0.0068 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:16][INFO] Step 496 | episode | episode_reward: -254.0348 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 173.2831
+[2026-08-12 07:52:17][INFO] Step 49664 | train | value_loss: 537.0433 | policy_loss: -0.0013 | entropy: 0.0146 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:17][INFO] Step 497 | episode | episode_reward: -212.2124 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 173.7373
+[2026-08-12 07:52:17][INFO] Step 49792 | train | value_loss: 1343.6545 | policy_loss: -0.0020 | entropy: 0.0386 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:17][INFO] Step 498 | episode | episode_reward: -331.2458 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 174.1752
+[2026-08-12 07:52:18][INFO] Step 499 | episode | episode_reward: -164.6495 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 174.5417
+[2026-08-12 07:52:18][INFO] Step 49920 | train | value_loss: 491.1040 | policy_loss: -0.0025 | entropy: 0.0412 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:18][INFO] Step 500 | episode | episode_reward: -245.0171 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 174.9809
+[2026-08-12 07:52:18][INFO] Step 50048 | train | value_loss: 793.5980 | policy_loss: -0.0044 | entropy: 0.0415 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:19][INFO] Step 501 | episode | episode_reward: -319.4579 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 175.4180
+[2026-08-12 07:52:19][INFO] Step 50176 | train | value_loss: 538.0648 | policy_loss: -0.0005 | entropy: 0.0140 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:19][INFO] Step 502 | episode | episode_reward: -181.0938 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 175.8365
+[2026-08-12 07:52:19][INFO] Step 503 | episode | episode_reward: -223.7869 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 176.2025
+[2026-08-12 07:52:19][INFO] Step 50304 | train | value_loss: 703.0083 | policy_loss: -0.0046 | entropy: 0.0575 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:20][INFO] Step 504 | episode | episode_reward: -221.0617 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 176.6356
+[2026-08-12 07:52:20][INFO] Step 50432 | train | value_loss: 490.6317 | policy_loss: -0.0003 | entropy: 0.0069 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:20][INFO] Step 505 | episode | episode_reward: -166.4274 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 177.0837
+[2026-08-12 07:52:20][INFO] Step 50560 | train | value_loss: 326.8534 | policy_loss: 0.0023 | entropy: 0.0338 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:21][INFO] Step 506 | episode | episode_reward: -154.0295 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 177.5243
+[2026-08-12 07:52:21][INFO] Step 50688 | train | value_loss: 1031.8887 | policy_loss: -0.0006 | entropy: 0.0322 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:21][INFO] Step 507 | episode | episode_reward: -300.8821 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 177.9724
+[2026-08-12 07:52:21][INFO] Step 508 | episode | episode_reward: -227.9427 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 178.3396
+[2026-08-12 07:52:22][INFO] Step 50816 | train | value_loss: 668.9120 | policy_loss: -0.0025 | entropy: 0.0370 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:22][INFO] Step 509 | episode | episode_reward: -167.5470 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 178.7813
+[2026-08-12 07:52:22][INFO] Step 50944 | train | value_loss: 323.9825 | policy_loss: -0.0017 | entropy: 0.0280 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:22][INFO] Step 510 | episode | episode_reward: -130.5483 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 179.2238
+[2026-08-12 07:52:23][INFO] Step 51072 | train | value_loss: 707.7381 | policy_loss: 0.1236 | entropy: 0.0302 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:23][INFO] Step 511 | episode | episode_reward: -267.1044 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 179.6672
+[2026-08-12 07:52:23][INFO] Step 512 | episode | episode_reward: -133.9081 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 180.0302
+[2026-08-12 07:52:23][INFO] Step 51200 | train | value_loss: 479.2733 | policy_loss: -0.0020 | entropy: 0.0161 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:24][INFO] Step 513 | episode | episode_reward: -230.6837 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 180.4835
+[2026-08-12 07:52:24][INFO] Step 51328 | train | value_loss: 541.2026 | policy_loss: -0.0027 | entropy: 0.0221 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:24][INFO] Step 514 | episode | episode_reward: -165.1049 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 180.9327
+[2026-08-12 07:52:24][INFO] Step 51456 | train | value_loss: 333.9879 | policy_loss: -0.0010 | entropy: 0.0090 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:24][INFO] Step 515 | episode | episode_reward: -155.5856 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 181.3716
+[2026-08-12 07:52:25][INFO] Step 51584 | train | value_loss: 633.5903 | policy_loss: 0.0151 | entropy: 0.0195 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:25][INFO] Step 516 | episode | episode_reward: -237.5845 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 181.8135
+[2026-08-12 07:52:25][INFO] Step 517 | episode | episode_reward: -251.1773 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 182.1812
+[2026-08-12 07:52:25][INFO] Step 51712 | train | value_loss: 799.1957 | policy_loss: -0.0019 | entropy: 0.0309 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:26][INFO] Step 518 | episode | episode_reward: -203.6599 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 182.6240
+[2026-08-12 07:52:26][INFO] Step 51840 | train | value_loss: 503.4988 | policy_loss: -0.0001 | entropy: 0.0046 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:26][INFO] Step 519 | episode | episode_reward: -242.7863 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 183.0715
+[2026-08-12 07:52:26][INFO] Step 51968 | train | value_loss: 559.0043 | policy_loss: 0.0010 | entropy: 0.0171 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:27][INFO] Step 520 | episode | episode_reward: -226.1626 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 183.5213
+[2026-08-12 07:52:27][INFO] Step 52096 | train | value_loss: 433.5855 | policy_loss: 0.0137 | entropy: 0.0264 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:27][INFO] Step 521 | episode | episode_reward: -188.2550 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 183.9598
+[2026-08-12 07:52:27][INFO] Step 522 | episode | episode_reward: -286.1588 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 184.3378
+[2026-08-12 07:52:28][INFO] Step 52224 | train | value_loss: 958.4194 | policy_loss: 0.0023 | entropy: 0.0252 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:28][INFO] Step 523 | episode | episode_reward: -206.2368 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 184.7811
+[2026-08-12 07:52:28][INFO] Step 52352 | train | value_loss: 561.8485 | policy_loss: -0.0001 | entropy: 0.0032 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:28][INFO] Step 524 | episode | episode_reward: -253.5030 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 185.2353
+[2026-08-12 07:52:29][INFO] Step 52480 | train | value_loss: 632.4777 | policy_loss: -0.0013 | entropy: 0.0108 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:29][INFO] Step 525 | episode | episode_reward: -241.2344 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 185.6851
+[2026-08-12 07:52:29][INFO] Step 526 | episode | episode_reward: -213.3269 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 186.0570
+[2026-08-12 07:52:29][INFO] Step 52608 | train | value_loss: 669.2865 | policy_loss: -0.0006 | entropy: 0.0071 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:30][INFO] Step 527 | episode | episode_reward: -282.6087 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 186.5107
+[2026-08-12 07:52:30][INFO] Step 52736 | train | value_loss: 679.6933 | policy_loss: 0.0009 | entropy: 0.0177 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:30][INFO] Step 528 | episode | episode_reward: -97.4031 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 186.9560
+[2026-08-12 07:52:30][INFO] Step 52864 | train | value_loss: 774.0211 | policy_loss: 0.0007 | entropy: 0.0071 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:30][INFO] Step 529 | episode | episode_reward: -296.2799 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 187.3978
+[2026-08-12 07:52:31][INFO] Step 52992 | train | value_loss: 574.5387 | policy_loss: -0.0021 | entropy: 0.0131 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:31][INFO] Step 530 | episode | episode_reward: -221.4890 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 187.8499
+[2026-08-12 07:52:31][INFO] Step 531 | episode | episode_reward: -161.9667 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 188.2211
+[2026-08-12 07:52:31][INFO] Step 53120 | train | value_loss: 533.4661 | policy_loss: 0.0031 | entropy: 0.0314 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:32][INFO] Step 532 | episode | episode_reward: -188.9292 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 188.6687
+[2026-08-12 07:52:32][INFO] Step 53248 | train | value_loss: 407.1715 | policy_loss: -0.0008 | entropy: 0.0098 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:32][INFO] Step 533 | episode | episode_reward: -182.6702 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 189.1188
+[2026-08-12 07:52:33][INFO] Step 53376 | train | value_loss: 284.5166 | policy_loss: -0.0018 | entropy: 0.0159 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:33][INFO] Step 534 | episode | episode_reward: -115.2826 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 189.5672
+[2026-08-12 07:52:33][INFO] Step 535 | episode | episode_reward: -233.9090 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 189.9344
+[2026-08-12 07:52:33][INFO] Step 53504 | train | value_loss: 838.2429 | policy_loss: 0.0002 | entropy: 0.0222 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:33][INFO] Step 536 | episode | episode_reward: -208.7241 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 190.3818
+[2026-08-12 07:52:34][INFO] Step 53632 | train | value_loss: 462.3420 | policy_loss: 0.0012 | entropy: 0.0409 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:34][INFO] Step 537 | episode | episode_reward: -190.7433 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 190.8319
+[2026-08-12 07:52:34][INFO] Step 53760 | train | value_loss: 325.5793 | policy_loss: -0.0007 | entropy: 0.0135 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:34][INFO] Step 538 | episode | episode_reward: -123.6717 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 191.2767
+[2026-08-12 07:52:35][INFO] Step 53888 | train | value_loss: 858.6981 | policy_loss: -0.0000 | entropy: 0.0071 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:35][INFO] Step 539 | episode | episode_reward: -272.6135 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 191.7277
+[2026-08-12 07:52:35][INFO] Step 540 | episode | episode_reward: -349.6180 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 192.0906
+[2026-08-12 07:52:35][INFO] Step 54016 | train | value_loss: 1479.6508 | policy_loss: 0.0051 | entropy: 0.0343 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:36][INFO] Step 541 | episode | episode_reward: -166.6492 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 192.5281
+[2026-08-12 07:52:36][INFO] Step 54144 | train | value_loss: 431.3763 | policy_loss: -0.0016 | entropy: 0.0076 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:36][INFO] Step 542 | episode | episode_reward: -223.9917 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 192.9586
+[2026-08-12 07:52:36][INFO] Step 54272 | train | value_loss: 1814.2824 | policy_loss: -0.0008 | entropy: 0.0115 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:36][INFO] Step 543 | episode | episode_reward: -444.7957 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 193.3942
+[2026-08-12 07:52:37][INFO] Step 544 | episode | episode_reward: -363.0661 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 193.7536
+[2026-08-12 07:52:37][INFO] Step 54400 | train | value_loss: 1488.5033 | policy_loss: -0.0033 | entropy: 0.0188 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:37][INFO] Step 545 | episode | episode_reward: -118.4913 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 194.1855
+[2026-08-12 07:52:37][INFO] Step 54528 | train | value_loss: 348.2977 | policy_loss: 0.0015 | entropy: 0.0215 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:38][INFO] Step 546 | episode | episode_reward: -186.4281 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 194.6184
+[2026-08-12 07:52:38][INFO] Step 54656 | train | value_loss: 545.0501 | policy_loss: -0.0006 | entropy: 0.0072 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:38][INFO] Step 547 | episode | episode_reward: -247.2292 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 195.0663
+[2026-08-12 07:52:39][INFO] Step 54784 | train | value_loss: 1455.4354 | policy_loss: -0.0001 | entropy: 0.0030 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:39][INFO] Step 548 | episode | episode_reward: -369.7419 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 195.5020
+[2026-08-12 07:52:39][INFO] Step 549 | episode | episode_reward: -339.6458 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 195.8622
+[2026-08-12 07:52:39][INFO] Step 54912 | train | value_loss: 1351.9473 | policy_loss: -0.0005 | entropy: 0.0165 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:39][INFO] Step 550 | episode | episode_reward: -203.3863 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 196.2937
+[2026-08-12 07:52:40][INFO] Step 55040 | train | value_loss: 417.7890 | policy_loss: -0.0013 | entropy: 0.0217 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:40][INFO] Step 551 | episode | episode_reward: -156.5636 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 196.7297
+[2026-08-12 07:52:40][INFO] Step 55168 | train | value_loss: 530.2747 | policy_loss: -0.0041 | entropy: 0.0150 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:40][INFO] Step 552 | episode | episode_reward: -230.2234 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 197.1719
+[2026-08-12 07:52:41][INFO] Step 55296 | train | value_loss: 624.6082 | policy_loss: -0.0010 | entropy: 0.0107 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:41][INFO] Step 553 | episode | episode_reward: -229.9927 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 197.5985
+[2026-08-12 07:52:41][INFO] Step 554 | episode | episode_reward: -201.9878 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 197.9639
+[2026-08-12 07:52:41][INFO] Step 55424 | train | value_loss: 581.0462 | policy_loss: -0.0048 | entropy: 0.0652 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:41][INFO] Step 555 | episode | episode_reward: -163.7714 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 198.3962
+[2026-08-12 07:52:42][INFO] Step 55552 | train | value_loss: 556.6432 | policy_loss: -0.0013 | entropy: 0.0086 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:42][INFO] Step 556 | episode | episode_reward: -265.6210 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 198.8317
+[2026-08-12 07:52:42][INFO] Step 55680 | train | value_loss: 529.0760 | policy_loss: -0.0011 | entropy: 0.0124 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:42][INFO] Step 557 | episode | episode_reward: -211.0913 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 199.2613
+[2026-08-12 07:52:43][INFO] Step 558 | episode | episode_reward: -227.5441 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 199.6165
+[2026-08-12 07:52:43][INFO] Step 55808 | train | value_loss: 760.0341 | policy_loss: -0.0045 | entropy: 0.0238 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:43][INFO] Step 559 | episode | episode_reward: -253.8782 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 200.0476
+[2026-08-12 07:52:43][INFO] Step 55936 | train | value_loss: 644.3558 | policy_loss: -0.0005 | entropy: 0.0080 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:44][INFO] Step 560 | episode | episode_reward: -229.4311 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 200.4842
+[2026-08-12 07:52:44][INFO] Step 56064 | train | value_loss: 833.3460 | policy_loss: -0.0007 | entropy: 0.0253 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:44][INFO] Step 561 | episode | episode_reward: -304.2025 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 200.9200
+[2026-08-12 07:52:44][INFO] Step 56192 | train | value_loss: 790.6866 | policy_loss: -0.0031 | entropy: 0.0297 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:44][INFO] Step 562 | episode | episode_reward: -258.3365 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 201.3516
+[2026-08-12 07:52:45][INFO] Step 563 | episode | episode_reward: -231.2669 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 201.7181
+[2026-08-12 07:52:45][INFO] Step 56320 | train | value_loss: 739.1984 | policy_loss: 0.0016 | entropy: 0.0250 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:45][INFO] Step 564 | episode | episode_reward: -184.4639 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 202.1579
+[2026-08-12 07:52:45][INFO] Step 56448 | train | value_loss: 429.6860 | policy_loss: -0.0018 | entropy: 0.0139 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:46][INFO] Step 565 | episode | episode_reward: -195.5148 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 202.5951
+[2026-08-12 07:52:46][INFO] Step 56576 | train | value_loss: 1002.1964 | policy_loss: -0.0003 | entropy: 0.0061 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:46][INFO] Step 566 | episode | episode_reward: -325.9611 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 203.0287
+[2026-08-12 07:52:46][INFO] Step 567 | episode | episode_reward: -275.8630 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 203.3845
+[2026-08-12 07:52:47][INFO] Step 56704 | train | value_loss: 920.6806 | policy_loss: -0.0012 | entropy: 0.0165 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:47][INFO] Step 568 | episode | episode_reward: -168.3379 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 203.8243
+[2026-08-12 07:52:47][INFO] Step 56832 | train | value_loss: 406.8803 | policy_loss: -0.0009 | entropy: 0.0171 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:47][INFO] Step 569 | episode | episode_reward: -196.4702 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 204.2642
+[2026-08-12 07:52:48][INFO] Step 56960 | train | value_loss: 412.7106 | policy_loss: -0.0000 | entropy: 0.0040 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:48][INFO] Step 570 | episode | episode_reward: -175.3214 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 204.7064
+[2026-08-12 07:52:48][INFO] Step 57088 | train | value_loss: 450.2131 | policy_loss: -0.0024 | entropy: 0.0132 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:48][INFO] Step 571 | episode | episode_reward: -182.6794 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 205.1480
+[2026-08-12 07:52:49][INFO] Step 572 | episode | episode_reward: -161.8415 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 205.5182
+[2026-08-12 07:52:49][INFO] Step 57216 | train | value_loss: 629.1471 | policy_loss: -0.0029 | entropy: 0.0193 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:49][INFO] Step 573 | episode | episode_reward: -200.1566 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 206.0124
+[2026-08-12 07:52:49][INFO] Step 57344 | train | value_loss: 413.5685 | policy_loss: -0.0003 | entropy: 0.0063 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:50][INFO] Step 574 | episode | episode_reward: -150.5334 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 206.5474
+[2026-08-12 07:52:50][INFO] Step 57472 | train | value_loss: 390.2844 | policy_loss: 0.0049 | entropy: 0.0204 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:50][INFO] Step 575 | episode | episode_reward: -160.3451 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 207.0716
+[2026-08-12 07:52:51][INFO] Step 576 | episode | episode_reward: -454.2939 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 207.5209
+[2026-08-12 07:52:51][INFO] Step 57600 | train | value_loss: 2660.1155 | policy_loss: 0.0002 | entropy: 0.0116 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:51][INFO] Step 577 | episode | episode_reward: -188.7569 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 207.9719
+[2026-08-12 07:52:51][INFO] Step 57728 | train | value_loss: 425.7551 | policy_loss: -0.0021 | entropy: 0.0256 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:52][INFO] Step 578 | episode | episode_reward: -185.5952 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 208.4240
+[2026-08-12 07:52:52][INFO] Step 57856 | train | value_loss: 640.4809 | policy_loss: 0.0162 | entropy: 0.0340 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:52][INFO] Step 579 | episode | episode_reward: -276.1944 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 208.8666
+[2026-08-12 07:52:52][INFO] Step 57984 | train | value_loss: 332.6612 | policy_loss: -0.0002 | entropy: 0.0079 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:52][INFO] Step 580 | episode | episode_reward: -127.8780 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 209.3160
+[2026-08-12 07:52:53][INFO] Step 581 | episode | episode_reward: -211.4387 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 209.6701
+[2026-08-12 07:52:53][INFO] Step 58112 | train | value_loss: 786.6201 | policy_loss: -0.0027 | entropy: 0.0213 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:53][INFO] Step 582 | episode | episode_reward: -257.5595 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 210.0996
+[2026-08-12 07:52:53][INFO] Step 58240 | train | value_loss: 786.5918 | policy_loss: 0.0023 | entropy: 0.0136 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:54][INFO] Step 583 | episode | episode_reward: -326.2922 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 210.5334
+[2026-08-12 07:52:54][INFO] Step 58368 | train | value_loss: 664.0073 | policy_loss: -0.0000 | entropy: 0.0046 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:54][INFO] Step 584 | episode | episode_reward: -169.2287 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 210.9716
+[2026-08-12 07:52:54][INFO] Step 58496 | train | value_loss: 862.9148 | policy_loss: -0.0049 | entropy: 0.0279 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:54][INFO] Step 585 | episode | episode_reward: -263.1667 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 211.4020
+[2026-08-12 07:52:55][INFO] Step 586 | episode | episode_reward: -202.3226 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 211.7658
+[2026-08-12 07:52:55][INFO] Step 58624 | train | value_loss: 591.0193 | policy_loss: -0.0025 | entropy: 0.0196 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:55][INFO] Step 587 | episode | episode_reward: -111.4387 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 212.1966
+[2026-08-12 07:52:56][INFO] Step 58752 | train | value_loss: 453.6550 | policy_loss: -0.0008 | entropy: 0.0071 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:56][INFO] Step 588 | episode | episode_reward: -196.6141 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 212.6389
+[2026-08-12 07:52:56][INFO] Step 58880 | train | value_loss: 1018.3843 | policy_loss: 0.0083 | entropy: 0.0106 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:56][INFO] Step 589 | episode | episode_reward: -311.9922 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 213.0754
+[2026-08-12 07:52:57][INFO] Step 590 | episode | episode_reward: -449.7249 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 213.4327
+[2026-08-12 07:52:57][INFO] Step 59008 | train | value_loss: 2523.0353 | policy_loss: 0.0001 | entropy: 0.0191 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:57][INFO] Step 591 | episode | episode_reward: -306.9699 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 213.8667
+[2026-08-12 07:52:57][INFO] Step 59136 | train | value_loss: 876.1605 | policy_loss: 0.0002 | entropy: 0.0074 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:57][INFO] Step 592 | episode | episode_reward: -178.2879 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 214.3029
+[2026-08-12 07:52:58][INFO] Step 59264 | train | value_loss: 696.9700 | policy_loss: -0.0021 | entropy: 0.0181 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:58][INFO] Step 593 | episode | episode_reward: -276.0516 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 214.7373
+[2026-08-12 07:52:58][INFO] Step 59392 | train | value_loss: 747.6704 | policy_loss: 0.0000 | entropy: 0.0055 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:58][INFO] Step 594 | episode | episode_reward: -254.4516 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 215.1681
+[2026-08-12 07:52:59][INFO] Step 595 | episode | episode_reward: -211.3065 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 215.5284
+[2026-08-12 07:52:59][INFO] Step 59520 | train | value_loss: 722.8225 | policy_loss: -0.0018 | entropy: 0.0159 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:52:59][INFO] Step 596 | episode | episode_reward: -263.5298 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 215.9661
+[2026-08-12 07:52:59][INFO] Step 59648 | train | value_loss: 540.9233 | policy_loss: -0.0003 | entropy: 0.0166 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:00][INFO] Step 597 | episode | episode_reward: -137.3645 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 216.4041
+[2026-08-12 07:53:00][INFO] Step 59776 | train | value_loss: 563.7134 | policy_loss: 0.0053 | entropy: 0.0263 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:00][INFO] Step 598 | episode | episode_reward: -217.0661 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 216.8361
+[2026-08-12 07:53:00][INFO] Step 599 | episode | episode_reward: -196.7552 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 217.1943
+[2026-08-12 07:53:00][INFO] Step 59904 | train | value_loss: 722.9000 | policy_loss: -0.0007 | entropy: 0.0211 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:01][INFO] Step 600 | episode | episode_reward: -281.5957 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 217.6242
+[2026-08-12 07:53:01][INFO] Step 60032 | train | value_loss: 761.9448 | policy_loss: -0.0002 | entropy: 0.0187 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:01][INFO] Step 601 | episode | episode_reward: -176.8972 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 218.0644
+[2026-08-12 07:53:01][INFO] Step 60160 | train | value_loss: 464.4370 | policy_loss: 0.0132 | entropy: 0.0127 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:02][INFO] Step 602 | episode | episode_reward: -200.7276 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 218.4987
+[2026-08-12 07:53:02][INFO] Step 60288 | train | value_loss: 453.3150 | policy_loss: 0.0001 | entropy: 0.0044 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:02][INFO] Step 603 | episode | episode_reward: -184.1991 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 218.9314
+[2026-08-12 07:53:02][INFO] Step 604 | episode | episode_reward: -269.3383 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 219.2901
+[2026-08-12 07:53:03][INFO] Step 60416 | train | value_loss: 996.0644 | policy_loss: 0.0080 | entropy: 0.0328 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:03][INFO] Step 605 | episode | episode_reward: -216.3188 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 219.7257
+[2026-08-12 07:53:03][INFO] Step 60544 | train | value_loss: 455.7669 | policy_loss: -0.0008 | entropy: 0.0190 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:03][INFO] Step 606 | episode | episode_reward: -140.7702 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 220.1601
+[2026-08-12 07:53:04][INFO] Step 60672 | train | value_loss: 416.6978 | policy_loss: 0.0001 | entropy: 0.0092 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:04][INFO] Step 607 | episode | episode_reward: -158.8985 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 220.5999
+[2026-08-12 07:53:04][INFO] Step 608 | episode | episode_reward: -135.9666 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 220.9556
+[2026-08-12 07:53:04][INFO] Step 60800 | train | value_loss: 704.7430 | policy_loss: -0.0037 | entropy: 0.0182 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:04][INFO] Step 609 | episode | episode_reward: -248.5603 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 221.3937
+[2026-08-12 07:53:05][INFO] Step 60928 | train | value_loss: 708.4268 | policy_loss: 0.0029 | entropy: 0.0186 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:05][INFO] Step 610 | episode | episode_reward: -300.4781 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 221.8377
+[2026-08-12 07:53:05][INFO] Step 61056 | train | value_loss: 995.9057 | policy_loss: 0.0001 | entropy: 0.0063 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:05][INFO] Step 611 | episode | episode_reward: -312.9667 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 222.2777
+[2026-08-12 07:53:06][INFO] Step 61184 | train | value_loss: 426.2247 | policy_loss: -0.0024 | entropy: 0.0070 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:06][INFO] Step 612 | episode | episode_reward: -165.9095 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 222.7207
+[2026-08-12 07:53:06][INFO] Step 613 | episode | episode_reward: -258.2219 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 223.0850
+[2026-08-12 07:53:06][INFO] Step 61312 | train | value_loss: 953.3701 | policy_loss: -0.0008 | entropy: 0.0210 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:07][INFO] Step 614 | episode | episode_reward: -146.0574 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 223.5353
+[2026-08-12 07:53:07][INFO] Step 61440 | train | value_loss: 411.9731 | policy_loss: 0.0244 | entropy: 0.0135 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:07][INFO] Step 615 | episode | episode_reward: -176.9333 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 223.9752
+[2026-08-12 07:53:07][INFO] Step 61568 | train | value_loss: 468.3785 | policy_loss: 0.0003 | entropy: 0.0050 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:08][INFO] Step 616 | episode | episode_reward: -194.1381 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 224.4244
+[2026-08-12 07:53:08][INFO] Step 61696 | train | value_loss: 397.2568 | policy_loss: -0.0004 | entropy: 0.0196 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:08][INFO] Step 617 | episode | episode_reward: -156.9457 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 224.8605
+[2026-08-12 07:53:08][INFO] Step 618 | episode | episode_reward: -189.1923 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 225.2342
+[2026-08-12 07:53:08][INFO] Step 61824 | train | value_loss: 601.9554 | policy_loss: -0.0019 | entropy: 0.0348 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:09][INFO] Step 619 | episode | episode_reward: -198.3544 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 225.6807
+[2026-08-12 07:53:09][INFO] Step 61952 | train | value_loss: 556.6965 | policy_loss: -0.0005 | entropy: 0.0053 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:09][INFO] Step 620 | episode | episode_reward: -232.9760 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 226.1244
+[2026-08-12 07:53:10][INFO] Step 62080 | train | value_loss: 642.1469 | policy_loss: -0.0015 | entropy: 0.0102 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:10][INFO] Step 621 | episode | episode_reward: -239.9020 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 226.5739
+[2026-08-12 07:53:10][INFO] Step 622 | episode | episode_reward: -273.4071 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 226.9374
+[2026-08-12 07:53:10][INFO] Step 62208 | train | value_loss: 992.5089 | policy_loss: -0.0005 | entropy: 0.0311 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:10][INFO] Step 623 | episode | episode_reward: -142.9859 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 227.3765
+[2026-08-12 07:53:11][INFO] Step 62336 | train | value_loss: 431.1414 | policy_loss: -0.0005 | entropy: 0.0092 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:11][INFO] Step 624 | episode | episode_reward: -198.7365 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 227.8135
+[2026-08-12 07:53:11][INFO] Step 62464 | train | value_loss: 561.1635 | policy_loss: -0.0020 | entropy: 0.0111 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:11][INFO] Step 625 | episode | episode_reward: -229.3372 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 228.2497
+[2026-08-12 07:53:12][INFO] Step 62592 | train | value_loss: 426.8909 | policy_loss: -0.0010 | entropy: 0.0096 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:12][INFO] Step 626 | episode | episode_reward: -176.6844 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 228.6834
+[2026-08-12 07:53:12][INFO] Step 627 | episode | episode_reward: -211.2580 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 229.0472
+[2026-08-12 07:53:12][INFO] Step 62720 | train | value_loss: 751.3444 | policy_loss: -0.0019 | entropy: 0.0167 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:13][INFO] Step 628 | episode | episode_reward: -209.4542 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 229.4838
+[2026-08-12 07:53:13][INFO] Step 62848 | train | value_loss: 502.4082 | policy_loss: -0.0004 | entropy: 0.0065 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:13][INFO] Step 629 | episode | episode_reward: -203.8938 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 229.9252
+[2026-08-12 07:53:13][INFO] Step 62976 | train | value_loss: 412.6670 | policy_loss: -0.0017 | entropy: 0.0143 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:13][INFO] Step 630 | episode | episode_reward: -164.6936 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 230.3634
+[2026-08-12 07:53:14][INFO] Step 631 | episode | episode_reward: -189.0351 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 230.7276
+[2026-08-12 07:53:14][INFO] Step 63104 | train | value_loss: 782.9652 | policy_loss: -0.0001 | entropy: 0.0092 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:14][INFO] Step 632 | episode | episode_reward: -163.9934 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 231.1627
+[2026-08-12 07:53:14][INFO] Step 63232 | train | value_loss: 507.5050 | policy_loss: -0.0010 | entropy: 0.0066 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:15][INFO] Step 633 | episode | episode_reward: -283.2341 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 231.5999
+[2026-08-12 07:53:15][INFO] Step 63360 | train | value_loss: 736.7632 | policy_loss: -0.0023 | entropy: 0.0145 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:15][INFO] Step 634 | episode | episode_reward: -247.2649 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 232.0367
+[2026-08-12 07:53:16][INFO] Step 63488 | train | value_loss: 663.0549 | policy_loss: -0.0019 | entropy: 0.0135 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:16][INFO] Step 635 | episode | episode_reward: -238.5852 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 232.4812
+[2026-08-12 07:53:16][INFO] Step 636 | episode | episode_reward: -159.1146 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 232.8443
+[2026-08-12 07:53:16][INFO] Step 63616 | train | value_loss: 699.4927 | policy_loss: -0.0026 | entropy: 0.0174 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:16][INFO] Step 637 | episode | episode_reward: -281.5953 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 233.2781
+[2026-08-12 07:53:17][INFO] Step 63744 | train | value_loss: 776.0418 | policy_loss: -0.0005 | entropy: 0.0151 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:17][INFO] Step 638 | episode | episode_reward: -256.0339 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 233.7123
+[2026-08-12 07:53:17][INFO] Step 63872 | train | value_loss: 883.2004 | policy_loss: 0.0009 | entropy: 0.0143 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:17][INFO] Step 639 | episode | episode_reward: -295.6602 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 234.1464
+[2026-08-12 07:53:18][INFO] Step 640 | episode | episode_reward: -177.4398 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 234.5111
+[2026-08-12 07:53:18][INFO] Step 64000 | train | value_loss: 686.0818 | policy_loss: -0.0003 | entropy: 0.0053 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:18][INFO] Step 641 | episode | episode_reward: -228.4226 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 234.9490
+[2026-08-12 07:53:18][INFO] Step 64128 | train | value_loss: 547.4114 | policy_loss: -0.0000 | entropy: 0.0055 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:18][INFO] Step 642 | episode | episode_reward: -113.3212 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 235.3842
+[2026-08-12 07:53:19][INFO] Step 64256 | train | value_loss: 508.3945 | policy_loss: 0.0116 | entropy: 0.0421 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:19][INFO] Step 643 | episode | episode_reward: -198.9302 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 235.8181
+[2026-08-12 07:53:19][INFO] Step 64384 | train | value_loss: 395.7271 | policy_loss: -0.0005 | entropy: 0.0174 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:19][INFO] Step 644 | episode | episode_reward: -155.6464 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 236.2578
+[2026-08-12 07:53:20][INFO] Step 645 | episode | episode_reward: -223.5201 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 236.6187
+[2026-08-12 07:53:20][INFO] Step 64512 | train | value_loss: 876.6247 | policy_loss: -0.0022 | entropy: 0.0197 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:20][INFO] Step 646 | episode | episode_reward: -191.0969 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 237.0516
+[2026-08-12 07:53:20][INFO] Step 64640 | train | value_loss: 594.0390 | policy_loss: -0.0025 | entropy: 0.0129 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:21][INFO] Step 647 | episode | episode_reward: -303.8337 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 237.4868
+[2026-08-12 07:53:21][INFO] Step 64768 | train | value_loss: 676.6144 | policy_loss: -0.0012 | entropy: 0.0500 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:21][INFO] Step 648 | episode | episode_reward: -206.1926 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 237.9221
+[2026-08-12 07:53:21][INFO] Step 64896 | train | value_loss: 326.8845 | policy_loss: 0.0069 | entropy: 0.0271 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:21][INFO] Step 649 | episode | episode_reward: -114.6368 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 238.3513
+[2026-08-12 07:53:22][INFO] Step 650 | episode | episode_reward: -270.5829 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 238.7166
+[2026-08-12 07:53:22][INFO] Step 65024 | train | value_loss: 889.6210 | policy_loss: -0.0024 | entropy: 0.0223 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:22][INFO] Step 651 | episode | episode_reward: -118.7438 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 239.1540
+[2026-08-12 07:53:23][INFO] Step 65152 | train | value_loss: 560.7984 | policy_loss: -0.0018 | entropy: 0.0154 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:23][INFO] Step 652 | episode | episode_reward: -237.6586 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 239.6100
+[2026-08-12 07:53:23][INFO] Step 65280 | train | value_loss: 432.3055 | policy_loss: 0.0037 | entropy: 0.0146 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:23][INFO] Step 653 | episode | episode_reward: -171.5660 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 240.0628
+[2026-08-12 07:53:24][INFO] Step 654 | episode | episode_reward: -214.6584 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 240.4230
+[2026-08-12 07:53:24][INFO] Step 65408 | train | value_loss: 853.9732 | policy_loss: -0.0019 | entropy: 0.0473 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:24][INFO] Step 655 | episode | episode_reward: -451.8278 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 240.8713
+[2026-08-12 07:53:24][INFO] Step 65536 | train | value_loss: 1943.0069 | policy_loss: -0.0021 | entropy: 0.0492 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:24][INFO] Step 656 | episode | episode_reward: -163.5156 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 241.3166
+[2026-08-12 07:53:25][INFO] Step 65664 | train | value_loss: 492.9401 | policy_loss: 0.0034 | entropy: 0.0364 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:25][INFO] Step 657 | episode | episode_reward: -200.1654 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 241.7628
+[2026-08-12 07:53:25][INFO] Step 65792 | train | value_loss: 322.8867 | policy_loss: -0.0023 | entropy: 0.0293 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:25][INFO] Step 658 | episode | episode_reward: -94.5233 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 242.2088
+[2026-08-12 07:53:26][INFO] Step 659 | episode | episode_reward: -199.0228 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 242.5713
+[2026-08-12 07:53:26][INFO] Step 65920 | train | value_loss: 761.7362 | policy_loss: -0.0048 | entropy: 0.0578 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:26][INFO] Step 660 | episode | episode_reward: -179.4014 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 243.0092
+[2026-08-12 07:53:26][INFO] Step 66048 | train | value_loss: 422.2165 | policy_loss: 0.0026 | entropy: 0.0609 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:27][INFO] Step 661 | episode | episode_reward: -154.2959 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 243.4558
+[2026-08-12 07:53:27][INFO] Step 66176 | train | value_loss: 711.4099 | policy_loss: 0.0006 | entropy: 0.0241 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:27][INFO] Step 662 | episode | episode_reward: -252.5347 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 243.8942
+[2026-08-12 07:53:27][INFO] Step 663 | episode | episode_reward: -259.4872 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 244.2509
+[2026-08-12 07:53:27][INFO] Step 66304 | train | value_loss: 949.7547 | policy_loss: -0.0079 | entropy: 0.0765 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:28][INFO] Step 664 | episode | episode_reward: -225.7265 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 244.6837
+[2026-08-12 07:53:28][INFO] Step 66432 | train | value_loss: 658.7984 | policy_loss: -0.0061 | entropy: 0.0343 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:28][INFO] Step 665 | episode | episode_reward: -304.3701 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 245.1220
+[2026-08-12 07:53:29][INFO] Step 66560 | train | value_loss: 1296.3684 | policy_loss: -0.0029 | entropy: 0.0874 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:29][INFO] Step 666 | episode | episode_reward: -408.2239 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 245.5567
+[2026-08-12 07:53:29][INFO] Step 66688 | train | value_loss: 1201.4031 | policy_loss: 0.0032 | entropy: 0.0303 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:29][INFO] Step 667 | episode | episode_reward: -306.5900 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 245.9928
+[2026-08-12 07:53:29][INFO] Step 668 | episode | episode_reward: -206.1233 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 246.3546
+[2026-08-12 07:53:30][INFO] Step 66816 | train | value_loss: 737.2284 | policy_loss: -0.0007 | entropy: 0.0243 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:30][INFO] Step 669 | episode | episode_reward: -130.9791 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 246.7930
+[2026-08-12 07:53:30][INFO] Step 66944 | train | value_loss: 629.4392 | policy_loss: 0.0070 | entropy: 0.0475 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:30][INFO] Step 670 | episode | episode_reward: -315.5977 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 247.2285
+[2026-08-12 07:53:31][INFO] Step 67072 | train | value_loss: 641.3934 | policy_loss: 0.1122 | entropy: 0.0226 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:31][INFO] Step 671 | episode | episode_reward: -196.0815 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 247.6599
+[2026-08-12 07:53:31][INFO] Step 672 | episode | episode_reward: -248.6475 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 248.0171
+[2026-08-12 07:53:31][INFO] Step 67200 | train | value_loss: 950.2824 | policy_loss: -0.0014 | entropy: 0.0203 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:32][INFO] Step 673 | episode | episode_reward: -170.6197 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 248.4535
+[2026-08-12 07:53:32][INFO] Step 67328 | train | value_loss: 518.2105 | policy_loss: 0.0158 | entropy: 0.0741 | lr: 0.0005 | consensus_rate: 0.0000
+[2026-08-12 07:53:32][INFO] Step 674 | episode | episode_reward: -271.0083 | episode_length: 100.0000 | consensus_rate: 0.0000 | elapsed_time: 248.8974

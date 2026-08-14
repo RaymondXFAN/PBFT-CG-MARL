@@ -1,0 +1,4 @@
+env: vmas_uav_coverage
+scenario: uav_coverage
+n_agents: 4
+max_steps: 100

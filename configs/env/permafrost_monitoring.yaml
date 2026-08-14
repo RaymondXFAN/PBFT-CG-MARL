@@ -1,0 +1,11 @@
+env: permafrost_monitoring
+data_path: /root/autodl-tmp/tpdc_data/raw/Active layer of ground temperature.xlsx
+n_sites: 12
+n_history: 10
+window_size: 30
+anomaly_threshold: 2.0
+episode_length: 100
+use_real_data: true
+# PBFT 需要 n_agents >= 3f+1, n_agents=12 支持 f=1,2,3
+max_steps: 100
+continuous_actions: false

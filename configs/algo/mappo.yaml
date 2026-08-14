@@ -1,0 +1,15 @@
+algorithm: mappo
+lr: 0.0005
+clip_ratio: 0.2
+value_loss_coef: 1.0
+entropy_coef: 0.01
+gamma: 0.99
+gae_lambda: 0.95
+ppo_epoch: 5
+num_mini_batch: 1
+hidden_dim: 64
+use_ReLU: true
+use_feature_normalization: true
+share_param: true
+use_rnn: true
+rnn_type: gru

@@ -1,0 +1,12 @@
+algorithm: qmix
+lr: 0.0005
+gamma: 0.99
+batch_size: 32
+buffer_size: 5000
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 100000
+hidden_dim: 64
+mixing_embed_dim: 32
+hypernet_embed_dim: 64
+target_update_interval: 200

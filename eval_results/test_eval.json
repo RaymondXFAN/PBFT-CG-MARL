@@ -1,0 +1,37 @@
+{
+  "n_episodes": 5,
+  "episode_rewards": [
+    -1.451030666125007,
+    0.5054728704126319,
+    -1.7953796135407174,
+    -0.5770996655919589,
+    0.6119472706341185
+  ],
+  "episode_lengths": [
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "mean_reward": -0.5412179608421865,
+  "std_reward": 0.9825802617443532,
+  "max_reward": 0.6119472706341185,
+  "min_reward": -1.7953796135407174,
+  "mean_length": 100.0,
+  "consensus_rate": 0.158,
+  "avg_consensus_rounds": 1.842,
+  "message_overhead": {
+    "total_messages": 7368.0,
+    "avg_messages_per_step": 14.736,
+    "messages_per_step_theoretical": 8.0
+  },
+  "consensus_stats": {
+    "total_calls": 500,
+    "successful_consensus": 79,
+    "consensus_success_rate": 0.158,
+    "n_byzantine": 0,
+    "byzantine_type": "random",
+    "current_leader": 0
+  }
+}
